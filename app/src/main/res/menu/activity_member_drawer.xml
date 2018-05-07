@@ -7,22 +7,22 @@
         <item
             android:id="@+id/nav_beranda"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Beranda" />
+            android:title="@string/menu_beranda" />
         <item
             android:id="@+id/nav_daftar"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Daftar Bank Sampah" />
+            android:title="@string/menu_listBS" />
         <item
             android:id="@+id/nav_redeem"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Tukar Poin" />
+            android:title="@string/menu_poin" />
         <item
             android:id="@+id/nav_profile"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Profile Saya" />
+            android:title="@string/menu_profil" />
         <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Keluar" />
+            android:title="@string/menu_keluar" />
     </group>
 </menu>

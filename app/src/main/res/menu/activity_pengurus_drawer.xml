@@ -7,26 +7,26 @@
         <item
             android:id="@+id/nav_beranda"
             android:icon="@drawable/ic_info"
-            android:title="Beranda" />
+            android:title="@string/menu_beranda" />
         <item
             android:id="@+id/nav_event"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Pengaturan Kegiatan" />
+            android:title="@string/menu_kegiatan" />
         <item
             android:id="@+id/nav_jadwal"
             android:icon="@drawable/ic_penimbangan"
-            android:title="Jadwal Penimbangan" />
+            android:title="@string/menu_jadwal" />
         <item
             android:id="@+id/nav_input"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Input Sampah Nasabah" />
+            android:title="@string/menu_input" />
         <item
             android:id="@+id/nav_profile"
             android:icon="@drawable/ic_profile"
-            android:title="Profil" />
+            android:title="@string/menu_profil" />
         <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Keluar" />
+            android:title="@string/menu_keluar" />
     </group>
 </menu>

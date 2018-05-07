@@ -5,9 +5,10 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-
     <string name="judul">PANDUAN PENDIRIAN BANK SAMPAH</string>
-
+    <string name="isi">
+    </string>
+    <!--untuk spinner di tampilan daftar bank sampah-->
     <string-array name="lokasi">
         <item>Pamulang</item>
         <item>Tangerang Kota</item>
@@ -16,4 +17,32 @@
         <item>Tiga Raksa</item>
         <item>Kali Deres</item>
     </string-array>
+
+    <!--untuk user, member, pengurus, dan yayasan-->
+    <string name="menu_beranda">Beranda</string>
+
+    <!--untuk member, pengurus, dan yayasan-->
+    <string name="menu_keluar">Keluar</string>
+    <string name="menu_profil">Profil Saya</string>
+
+    <!--untuk menu user-->
+    <string name="menu_register">Registrasi Bank Sampah</string>
+    <string name="menu_gabung">Bergabung</string>
+    <string name="menu_masuk">Masuk</string>
+
+    <!--untuk menu member-->
+    <string name="menu_listBS">Daftar Bank Sampah</string>
+    <string name="menu_poin">Poin Saya</string>
+
+    <!--untuk menu pengurus-->
+    <string name="menu_kegiatan">Pengaturan Kegiatan</string>
+    <string name="menu_jadwal">Jadwal Penimbangan</string>
+    <string name="menu_input">Input Sampah Nasaban</string>
+
+    <!--untuk menu yayasan-->
+    <string name="menu_tipe_harga">Tipe dan Harga Sampah</string>
+    <string name="menu_lihat_kegiatan">Kegiatan</string>
+    <string name="menu_hadiah">Pengaturan Hadiah</string>
+
+
 </resources>
