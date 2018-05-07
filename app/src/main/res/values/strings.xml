@@ -37,7 +37,7 @@
     <!--untuk menu pengurus-->
     <string name="menu_kegiatan">Pengaturan Kegiatan</string>
     <string name="menu_jadwal">Jadwal Penimbangan</string>
-    <string name="menu_input">Input Sampah Nasaban</string>
+    <string name="menu_input">Input Sampah Nasabah</string>
 
     <!--untuk menu yayasan-->
     <string name="menu_tipe_harga">Tipe dan Harga Sampah</string>
