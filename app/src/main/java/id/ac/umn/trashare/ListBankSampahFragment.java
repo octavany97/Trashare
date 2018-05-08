@@ -21,7 +21,7 @@ public class ListBankSampahFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-
+        final String access = this.getArguments().getString("access");
         View v = inflater.inflate(R.layout.fragment_menu_list_bank_sampah, container, false);
 
         String [] values =
@@ -42,6 +42,7 @@ public class ListBankSampahFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(), DetailBankSampahActivity.class);
                 //System.out.println(items[i].toString());
+                intent.putExtra("access", access);
                 intent.putExtra("name", items[i].toString());
                 startActivity(intent);
                 // Toast.makeText(getActivity().getApplicationContext(),items[i], Toast.LENGTH_SHORT).show();

@@ -27,7 +27,8 @@
         <activity android:name=".UpdateSampahActivity" />
         <activity android:name=".AddSampahActivity" />
         <activity android:name=".RegisterNasabahActivity" />
-        <activity android:name=".SplashActivity"></activity>
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".DetailEventYayasanActivity"></activity>
     </application>
 
 </manifest>

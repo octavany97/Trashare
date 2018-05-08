@@ -24,12 +24,21 @@ public class DetailBankSampahActivity extends AppCompatActivity {
         TextView txtNama = (TextView) findViewById(R.id.nama_lokasi);
         txtNama.setText(name);
 
+        final String access = getIntent().getStringExtra("access");
+
         Button btnSignUp = (Button) findViewById(R.id.btn_signup);
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(DetailBankSampahActivity.this, SignUpActivity.class);
-                startActivity(i);
+                if(access.equals("not login")){
+                    Intent i = new Intent(DetailBankSampahActivity.this, MainActivity.class);
+                    i.putExtra("access", "login");
+                    startActivity(i);
+                }
+                else{
+                    Intent i = new Intent(DetailBankSampahActivity.this, RegisterNasabahActivity.class);
+                    startActivity(i);
+                }
             }
         });
     }

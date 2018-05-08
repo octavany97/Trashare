@@ -15,6 +15,8 @@ import android.view.MenuItem;
 
 public class MemberActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
+    private String access = "member";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -94,7 +96,8 @@ public class MemberActivity extends AppCompatActivity implements NavigationView.
 
     private void displaySelectedScreen(int itemId){
         Fragment fragment = null;
-
+        Bundle bundle = new Bundle();
+        bundle.putString("access", access);
         // Handle navigation view item clicks here.
         switch(itemId){
             case R.id.nav_beranda:
@@ -102,6 +105,7 @@ public class MemberActivity extends AppCompatActivity implements NavigationView.
                 break;
             case R.id.nav_daftar:
                 fragment = new ListBankSampahFragment();
+                fragment.setArguments(bundle);
                 break;
             case R.id.nav_register:
                 fragment = new RegisterBankSampahFragment();

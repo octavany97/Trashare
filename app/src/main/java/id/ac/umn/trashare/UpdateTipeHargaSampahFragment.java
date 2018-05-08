@@ -139,8 +139,8 @@ public class UpdateTipeHargaSampahFragment extends Fragment {
                     } else {
                         builder = new AlertDialog.Builder(getActivity());
                     }
-                    builder.setTitle("Delete entry")
-                            .setMessage("Are you sure you want to delete " + tv1.getText().toString() + "?")
+                    builder.setTitle("Penghapusan Sampah")
+                            .setMessage("Apakah Anda yakin akan menghapus " + tv1.getText().toString() + "?")
                             .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     // continue with delete

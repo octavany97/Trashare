@@ -103,8 +103,8 @@ public class YayasanActivity extends AppCompatActivity implements NavigationView
             case R.id.nav_update:
                 fragment = new UpdateTipeHargaSampahFragment();
                 break;
-            case R.id.nav_register:
-                fragment = new RegisterBankSampahFragment();
+            case R.id.nav_event:
+                fragment = new EventYayasanFragment();
                 break;
             case R.id.nav_logout:
                 Intent i = new Intent(this, MainActivity.class);
