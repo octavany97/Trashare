@@ -31,6 +31,8 @@
     <!--untuk menu member-->
     <string name="menu_listBS">Daftar Bank Sampah</string>
     <string name="menu_poin">Poin Saya</string>
+    <string name="menu_notif">Notifikasi</string>
+    <string name="menu_tabungan">Tabungan Saya</string>
 
     <!--untuk menu pengurus-->
     <string name="menu_kegiatan">Pengaturan Kegiatan</string>

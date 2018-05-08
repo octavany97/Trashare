@@ -107,8 +107,8 @@ public class MemberActivity extends AppCompatActivity implements NavigationView.
                 fragment = new ListBankSampahFragment();
                 fragment.setArguments(bundle);
                 break;
-            case R.id.nav_register:
-                fragment = new RegisterBankSampahFragment();
+            case R.id.nav_redeem:
+                fragment = new PointFragment();
                 break;
             case R.id.nav_logout:
                 Intent i = new Intent(this, MainActivity.class);

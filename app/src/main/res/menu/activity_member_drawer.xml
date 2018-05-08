@@ -17,6 +17,14 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_poin" />
         <item
+            android:id="@+id/nav_tabungan"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_tabungan" />
+        <item
+            android:id="@+id/nav_notifikasi"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_notif" />
+        <item
             android:id="@+id/nav_profile"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_profil" />

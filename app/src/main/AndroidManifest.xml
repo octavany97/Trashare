@@ -31,7 +31,11 @@
         <activity android:name=".DetailEventYayasanActivity" />
         <activity android:name=".AddPrizeActivity" />
         <activity android:name=".DetailPrizeYayasanActivity" />
-        <activity android:name=".FormRegistrasiBankSampahActivity"></activity>
+        <activity android:name=".FormRegistrasiBankSampahActivity" />
+        <activity android:name=".PoinSayaActivity" />
+        <activity android:name=".HistoryPoinActivity" />
+        <activity android:name=".RedeemPrizeActivity" />
+        <activity android:name=".DetailRedeemPrizeActivity"></activity>
     </application>
 
 </manifest>
