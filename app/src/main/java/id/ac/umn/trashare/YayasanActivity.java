@@ -44,12 +44,12 @@ public class YayasanActivity extends AppCompatActivity implements NavigationView
         }
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
+    }*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -105,6 +105,9 @@ public class YayasanActivity extends AppCompatActivity implements NavigationView
                 break;
             case R.id.nav_event:
                 fragment = new EventYayasanFragment();
+                break;
+            case R.id.nav_reward:
+                fragment = new PengaturanHadiahFragment();
                 break;
             case R.id.nav_logout:
                 Intent i = new Intent(this, MainActivity.class);

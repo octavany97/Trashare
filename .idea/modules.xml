@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Trashare.iml" filepath="$PROJECT_DIR$/Trashare.iml" />
+      <module fileurl="file://D:\Kuliah\Android\ProjectUAS\GitHub\Trashare\Trashare.iml" filepath="D:\Kuliah\Android\ProjectUAS\GitHub\Trashare\Trashare.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Kuliah\Android\ProjectUAS\GitHub\Trashare\app\app.iml" filepath="D:\Kuliah\Android\ProjectUAS\GitHub\Trashare\app\app.iml" />
     </modules>
   </component>
 </project>

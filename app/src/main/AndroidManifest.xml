@@ -28,7 +28,10 @@
         <activity android:name=".AddSampahActivity" />
         <activity android:name=".RegisterNasabahActivity" />
         <activity android:name=".SplashActivity" />
-        <activity android:name=".DetailEventYayasanActivity"></activity>
+        <activity android:name=".DetailEventYayasanActivity" />
+        <activity android:name=".AddPrizeActivity" />
+        <activity android:name=".DetailPrizeYayasanActivity" />
+        <activity android:name=".FormRegistrasiBankSampahActivity"></activity>
     </application>
 
 </manifest>

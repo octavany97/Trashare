@@ -3,9 +3,7 @@ package id.ac.umn.trashare;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,48 +11,48 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
-import android.widget.TextView;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * Created by ASUS on 5/8/2018.
  */
 
-public class EventYayasanFragment extends Fragment {
+public class PengaturanHadiahFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        //return inflater.inflate(R.layout.fragment_menu_event_yayasan, container, false);
 
-        View v = inflater.inflate(R.layout.fragment_menu_event_yayasan, container, false);
+        //return inflater.inflate(R.layout.fragment_menu_pengaturan_hadiah, container, false);
+        View v = inflater.inflate(R.layout.fragment_menu_pengaturan_hadiah, container, false);
 
-        ListView listEvent =(ListView) v.findViewById(R.id.listEvent);
-        final String[] items = new String[] {"Jalan Sehat Bank Sampah", "Kreasi Bank Sampah", "Senam Bersama Bank Sampah"};
+        ListView listPrize =(ListView) v.findViewById(R.id.listHadiah);
+        final String[] items = new String[] {"Pulsa 10.000", "Voucher Indomaret 20.000", "Voucher Alfamart 20.000"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,items);
 
-
-        listEvent.setAdapter(adapter);
-        listEvent.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listPrize.setAdapter(adapter);
+        listPrize.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getActivity(), DetailEventYayasanActivity.class);
-                //System.out.println(items[i].toString());
+                Intent intent = new Intent(getActivity(), DetailPrizeYayasanActivity.class);
                 intent.putExtra("name", items[i].toString());
                 startActivity(intent);
-                // Toast.makeText(getActivity().getApplicationContext(),items[i], Toast.LENGTH_SHORT).show();
             }
         });
+
+        Button btnAdd = (Button) v.findViewById(R.id.btnAdd);
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), AddPrizeActivity.class);
+                startActivity(i);
+            }
+        });
+
         return v;
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle("Kegiatan");
+        getActivity().setTitle("Hadiah");
     }
 }

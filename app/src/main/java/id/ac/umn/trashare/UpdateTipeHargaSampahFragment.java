@@ -35,21 +35,8 @@ public class UpdateTipeHargaSampahFragment extends Fragment {
         //return super.onCreateView(inflater, container, savedInstanceState);
 
         View v = inflater.inflate(R.layout.fragment_menu_update_tipe_harga_sampah, container, false);
-        return v;
-    }
 
-
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle("Jenis Sampah");
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-
-        TableLayout tblTipeHargaSampah = (TableLayout) getActivity().findViewById(R.id.tipe_harga_sampah_table);
+        TableLayout tblTipeHargaSampah = (TableLayout) v.findViewById(R.id.tipe_harga_sampah_table);
 
         TableRow tr_head = new TableRow(this.getActivity());
         tr_head.setBackgroundColor(Color.GRAY);
@@ -181,5 +168,22 @@ public class UpdateTipeHargaSampahFragment extends Fragment {
                 startActivity(i);
             }
         });
+
+
+        return v;
+    }
+
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        getActivity().setTitle("Jenis Sampah");
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+
     }
 }
