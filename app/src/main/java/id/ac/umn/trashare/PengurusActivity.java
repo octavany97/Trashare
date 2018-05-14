@@ -92,11 +92,11 @@ public class PengurusActivity extends AppCompatActivity implements NavigationVie
         return true;
     }
 
-    private void displaySelectedScreen(int itemId){
+    private void displaySelectedScreen(int itemId) {
         Fragment fragment = null;
 
         // Handle navigation view item clicks here.
-        switch(itemId){
+        switch (itemId) {
             case R.id.nav_beranda:
                 fragment = new BerandaFragment();
                 break;
@@ -112,6 +112,9 @@ public class PengurusActivity extends AppCompatActivity implements NavigationVie
             case R.id.nav_profile:
                 fragment = new RegisterBankSampahFragment();
                 break;
+            case R.id.nav_profile:
+                fragment = new ProfilePengurusFragment();
+                break;
             case R.id.nav_logout:
                 Intent i = new Intent(this, MainActivity.class);
                 startActivity(i);
@@ -119,7 +122,7 @@ public class PengurusActivity extends AppCompatActivity implements NavigationVie
                 break;
         }
 
-        if(fragment != null){
+        if (fragment != null) {
             FragmentTransaction ft = getFragmentManager().beginTransaction();
             ft.replace(R.id.content_frame, fragment);
             ft.commit();
