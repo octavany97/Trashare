@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="ID Member"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/id_member_autocomplete"
+                android:hint="Masukkan ID Member"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Sampah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </TableRow>
+        <ScrollView>
+
+            <ListView
+                android:id="@+id/sampah_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scrollbars="vertical" />
+        </ScrollView>
+        <Button
+            android:id="@+id/addSampahButton"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorButton"
+            android:foreground="?attr/selectableItemBackground"
+            android:textColor="#555"
+            android:text="tambah sampah" />
+
+    </TableLayout>
+
+
+</LinearLayout>

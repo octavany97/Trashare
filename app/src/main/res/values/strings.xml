@@ -43,4 +43,16 @@
     <string name="menu_tipe_harga">Tipe dan Harga Sampah</string>
     <string name="menu_lihat_kegiatan">Kegiatan</string>
     <string name="menu_hadiah">Pengaturan Hadiah</string>
+
+    <!--untuk dialog box input sampah-->
+    <string name="tipe_sampah_hint">Pilih tipe sampah</string>
+    <string name="berat_sampah_hint">Masukkan berat sampah</string>
+    <string-array name="tipe_list">
+        <item>Koran</item>
+        <item>Botol</item>
+        <item>Besi</item>
+        <item>Kayu</item>
+        <item>Plastik</item>
+        <item>Aluminium</item>
+    </string-array>
 </resources>

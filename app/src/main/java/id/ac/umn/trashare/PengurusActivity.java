@@ -107,7 +107,7 @@ public class PengurusActivity extends AppCompatActivity implements NavigationVie
                 fragment = new RegisterBankSampahFragment();
                 break;
             case R.id.nav_input:
-                fragment = new RegisterBankSampahFragment();
+                fragment = new InputSampahFragment();
                 break;
             case R.id.nav_profile:
                 fragment = new RegisterBankSampahFragment();
