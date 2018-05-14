@@ -24,7 +24,8 @@
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:id="@+id/txtPoin"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="75"/>
         </TableRow>
 
         <TableRow>

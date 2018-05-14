@@ -109,6 +109,12 @@ public class YayasanActivity extends AppCompatActivity implements NavigationView
             case R.id.nav_reward:
                 fragment = new PengaturanHadiahFragment();
                 break;
+            case R.id.nav_notifikasi:
+                fragment = new NotifikasiMemberFragment();
+                break;
+            case R.id.nav_profile:
+                fragment = new ProfileMemberFragment();
+                break;
             case R.id.nav_logout:
                 Intent i = new Intent(this, MainActivity.class);
                 startActivity(i);
