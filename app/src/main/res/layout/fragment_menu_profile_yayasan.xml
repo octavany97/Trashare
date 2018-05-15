@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Nama Bank Sampah"
+                android:text="Nama Yayasan"
                 android:textColor="#000"
                 android:textSize="21sp"
                 android:textStyle="bold" />
@@ -109,9 +109,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Jumlah Member"
+                        android:text="Jumlah Bank Sampah"
                         android:gravity="center"
-                        android:textSize="20sp"/>
+                        android:textSize="15sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
