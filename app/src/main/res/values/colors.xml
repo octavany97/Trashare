@@ -5,6 +5,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorButton">#6fd3e2</color>
 
+    <color name="colorMenu">#BEFFAF</color>
     <color name="colorBackgroundStart">#fafafa</color>
     <color name="colorBackgroundEnd">#00FF00</color>
     <color name="greylight">#fafafa</color>

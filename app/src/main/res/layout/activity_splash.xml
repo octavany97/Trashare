@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/gradientbackground"
+    android:background="@color/colorMenu"
     tools:context="id.ac.umn.trashare.SplashActivity">
 
     <ImageView
