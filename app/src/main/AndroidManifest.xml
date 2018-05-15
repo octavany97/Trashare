@@ -36,7 +36,9 @@
         <activity android:name=".HistoryPoinActivity" />
         <activity android:name=".RedeemPrizeActivity" />
         <activity android:name=".DetailRedeemPrizeActivity" />
-        <activity android:name=".DetailNotifikasiMemberActivity"></activity>
+        <activity android:name=".DetailNotifikasiMemberActivity" />
+        <activity android:name=".DetailEventPengurusActivity" />
+        <activity android:name=".AddEventPengurusActivity"></activity>
     </application>
 
 </manifest>

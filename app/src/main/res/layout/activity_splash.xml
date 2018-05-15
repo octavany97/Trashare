@@ -7,9 +7,13 @@
     android:orientation="vertical"
     android:gravity="center"
 <<<<<<< HEAD
+<<<<<<< HEAD
     android:background="@color/colorMenu"
 =======
     android:background="@drawable/gradientbackground"
+>>>>>>> dev
+=======
+    android:background="@color/colorMenu"
 >>>>>>> dev
     tools:context="id.ac.umn.trashare.SplashActivity">
 
