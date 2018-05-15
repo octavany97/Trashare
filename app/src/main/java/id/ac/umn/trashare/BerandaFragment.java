@@ -40,5 +40,6 @@ public class BerandaFragment extends Fragment{
         super.onViewCreated(view, savedInstanceState);
 
         getActivity().setTitle("Beranda Bank Sampah");
+        //getActivity().setTitleColor(246315);
     }
 }

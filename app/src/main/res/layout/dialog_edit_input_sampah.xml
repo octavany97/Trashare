@@ -5,6 +5,14 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:scaleType="center"
+        android:background="#7ee05e"
+        android:textAlignment="center"
+        android:fontFamily="serif-monospace"
+        android:text="PILIH SAMPAH"/>
     <EditText
         android:id="@+id/tipe_edit"
         android:layout_width="match_parent"

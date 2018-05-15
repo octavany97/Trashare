@@ -20,6 +20,7 @@ public class SplashActivity extends Activity {
                     e.printStackTrace();
                 } finally {
                     startActivity(new Intent(SplashActivity.this,MainActivity.class));
+                    finish();
                 }
             }
         };
