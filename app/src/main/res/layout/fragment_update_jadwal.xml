@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    android:orientation="vertical">
+
+    <CalendarView
+        android:id="@+id/calenderview"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:textSize="25sp"
+        android:id="@+id/date"
+        android:layout_gravity="center_horizontal"
+        android:hint="Tanggal Pilihan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <EditText
+        android:textSize="25sp"
+        android:id="@+id/nama_kegiatan"
+        android:layout_gravity="center_horizontal"
+        android:hint="Tema Kegiatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:text="Update"
+        android:id="@+id/btn_update_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
