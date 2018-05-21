@@ -5,6 +5,7 @@ import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,8 +36,9 @@ public class LoginFragment extends Fragment {
 
         final EditText username = (EditText) getActivity().findViewById(R.id.username_edit);
         final EditText password = (EditText) getActivity().findViewById(R.id.password_edit);
-        Button loginBtn = (Button) getActivity().findViewById(R.id.btnLogin);
-        loginBtn.setOnClickListener(new View.OnClickListener() {
+        CardView cardLogin = (CardView) getActivity().findViewById(R.id.cardLogin);
+        //Button loginBtn = (Button) getActivity().findViewById(R.id.btnLogin);
+        cardLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(username.getText().toString().equals("member") && password.getText().toString().equals("member")){
@@ -67,13 +69,22 @@ public class LoginFragment extends Fragment {
             }
         });
 
-        Button btnDaftar = (Button) getActivity().findViewById(R.id.btnRegister);
+        CardView cardSignUp = (CardView) getActivity().findViewById(R.id.cardRegister);
+        cardSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(),SignUpActivity.class);
+                startActivity(i);
+            }
+        });
+
+        /*Button btnDaftar = (Button) getActivity().findViewById(R.id.btnRegister);
         btnDaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(),SignUpActivity.class);
                 startActivity(i);
             }
-        });
+        });*/
     }
 }
