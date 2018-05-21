@@ -7,7 +7,10 @@
     android:background="@drawable/gradientbackground"
     android:gravity="center">
 
-    <ImageView android:src="@drawable/logoputih" />
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logoputih" />
     <TableRow>
         <TextView
             android:text="Login"
