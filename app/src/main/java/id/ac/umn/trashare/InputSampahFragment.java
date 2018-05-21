@@ -21,6 +21,7 @@ import android.widget.Spinner;
  */
 
 public class InputSampahFragment extends Fragment {
+    int id_tipe = 0;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -57,11 +58,11 @@ public class InputSampahFragment extends Fragment {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
                 //builder.setMessage();
                 LayoutInflater inflater = getActivity().getLayoutInflater();
-//                ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-//                        getActivity(),
-//                        R.array.tipe_list,
-//                        android.R.layout.simple_dropdown_item_1line
-//                );
+                ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+                        getActivity(),
+                        R.array.tipe_list,
+                        android.R.layout.simple_dropdown_item_1line
+                );
                 builder.setView(inflater.inflate(R.layout.dialog_edit_input_sampah, null))
                         .setPositiveButton(R.string.tambah, new DialogInterface.OnClickListener() {
                             @Override
@@ -72,6 +73,13 @@ public class InputSampahFragment extends Fragment {
                                 dialogInterface.cancel();
                             }
                         })
+                        .setAdapter(adapter, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                System.out.println(i);
+                                id_tipe = i;
+                            }
+                        })
                         .setNegativeButton(R.string.kembali, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int i) {
@@ -79,14 +87,6 @@ public class InputSampahFragment extends Fragment {
                                 dialog.cancel();
                             }
                         });
-//                builder.setTitle(R.string.tipe_sampah_hint)
-//                        .setAdapter(adapter, new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialogInterface, int i) {
-//                                System.out.println(i);
-//                            }
-//                        });
-
 
                 AlertDialog dialog = builder.create();
 
@@ -94,8 +94,6 @@ public class InputSampahFragment extends Fragment {
 
             }
         });
-
-
         return v;
     }
 
