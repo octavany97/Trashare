@@ -1,6 +1,9 @@
 package id.ac.umn.trashare;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.Fragment;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -24,17 +27,8 @@ public class InputSampahFragment extends Fragment {
         //return inflater.inflate(R.layout.fragment_menu_register_bank_sampah, container, false);
         View v = inflater.inflate(R.layout.fragment_menu_input_sampah, container, false);
 
-        /*String [] values =
-                {"Pamulang","Tangerang Kota","Tangerang Selatan","Legok","Tigaraksa","Kali Deres"};
-        Spinner spinner = (Spinner) v.findViewById(R.id.spinner_lokasi);
-        ArrayAdapter<String> LTRadapter = new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_spinner_item, values);
-        LTRadapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-        spinner.setAdapter(LTRadapter);
-*/
-
-
         ListView listView =(ListView) v.findViewById(R.id.sampah_list);
-        final String[] items = new String[] {"Bukit Pamulang Indah", "Villa Pamulang", "Al Falaah III","Puri Bintaro Hijau","Villa Inti Persada","Taman PAUD Cahaya Agung","RS Griya Pipit VI","Perigi Baru I","Japos Graha Lestari","Perigi Baru II"};
+       // final String[] items = new String[] {"Bukit Pamulang Indah", "Villa Pamulang", "Al Falaah III","Puri Bintaro Hijau","Villa Inti Persada","Taman PAUD Cahaya Agung","RS Griya Pipit VI","Perigi Baru I","Japos Graha Lestari","Perigi Baru II"};
         //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,R.array.tipe_list);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
@@ -56,11 +50,55 @@ public class InputSampahFragment extends Fragment {
         });
 
 
-        Button btnRegis = (Button) v.findViewById(R.id.addSampahButton);
+        Button addSampahButton = (Button) v.findViewById(R.id.addSampahButton);
+        addSampahButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                //builder.setMessage();
+                LayoutInflater inflater = getActivity().getLayoutInflater();
+//                ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+//                        getActivity(),
+//                        R.array.tipe_list,
+//                        android.R.layout.simple_dropdown_item_1line
+//                );
+                builder.setView(inflater.inflate(R.layout.dialog_edit_input_sampah, null))
+                        .setPositiveButton(R.string.tambah, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                //tambah ke database
+                                //ntar list view nya bertambah
+
+                                dialogInterface.cancel();
+                            }
+                        })
+                        .setNegativeButton(R.string.kembali, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int i) {
+                                //cancel the dialog
+                                dialog.cancel();
+                            }
+                        });
+//                builder.setTitle(R.string.tipe_sampah_hint)
+//                        .setAdapter(adapter, new DialogInterface.OnClickListener() {
+//                            @Override
+//                            public void onClick(DialogInterface dialogInterface, int i) {
+//                                System.out.println(i);
+//                            }
+//                        });
+
+
+                AlertDialog dialog = builder.create();
+
+                dialog.show();
+
+            }
+        });
 
 
         return v;
     }
+
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {

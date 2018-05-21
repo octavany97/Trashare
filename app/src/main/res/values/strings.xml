@@ -55,4 +55,7 @@
         <item>Plastik</item>
         <item>Aluminium</item>
     </string-array>
+
+    <string name="tambah">Tambah</string>
+    <string name="kembali">Kembali</string>
 </resources>

@@ -10,9 +10,9 @@
     tools:context="id.ac.umn.trashare.SplashActivity">
 
     <ImageView
-        android:layout_width="230dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/gambar"/>
+        android:src="@drawable/logoputih"/>
 
 </LinearLayout>
     <!--android:background="@drawable/gradientbackground"-->
