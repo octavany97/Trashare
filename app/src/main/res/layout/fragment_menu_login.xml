@@ -4,14 +4,19 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="16dp"
-    android:background="@drawable/gradientbackground"
+    android:background="@color/colorMenu"
     android:gravity="center">
+
 
     <ImageView
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:src="@drawable/logoputih" />
-    <TableRow>
+
+
+    <ImageView android:src="@drawable/logoputih" />
+    <!--<TableRow>
+>>>>>>> dev
         <TextView
             android:text="Login"
             android:layout_width="0dp"
@@ -20,9 +25,10 @@
             android:textAlignment="center"
             android:fontFamily="arial"
             android:textSize="30dp" />
-    </TableRow>
+    </TableRow>-->
 
-    <TableRow>
+    <TableRow
+        android:paddingTop="16dp">
         <ImageView android:src="@drawable/ic_mail_outline_black_24dp"
             android:layout_width="0dp"
             android:layout_weight="1"/>
@@ -37,6 +43,7 @@
     </TableRow>
 
     <TableRow
+        android:paddingTop="16dp"
         android:paddingBottom="16dp">
         <ImageView android:src="@drawable/ic_vpn_key_black_24dp"
             android:layout_weight="1"
