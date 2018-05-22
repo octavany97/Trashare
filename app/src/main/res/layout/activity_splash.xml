@@ -10,7 +10,8 @@
     tools:context="id.ac.umn.trashare.SplashActivity">
 
     <ImageView
-        android:layout_width="300dp"
+        android:id="@+id/logo_trashare"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:src="@drawable/logoputih"/>
 

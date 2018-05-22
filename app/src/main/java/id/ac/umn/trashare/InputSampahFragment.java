@@ -28,8 +28,8 @@ public class InputSampahFragment extends Fragment {
         //return inflater.inflate(R.layout.fragment_menu_register_bank_sampah, container, false);
         View v = inflater.inflate(R.layout.fragment_menu_input_sampah, container, false);
 
-        ListView listView =(ListView) v.findViewById(R.id.sampah_list);
-       // final String[] items = new String[] {"Bukit Pamulang Indah", "Villa Pamulang", "Al Falaah III","Puri Bintaro Hijau","Villa Inti Persada","Taman PAUD Cahaya Agung","RS Griya Pipit VI","Perigi Baru I","Japos Graha Lestari","Perigi Baru II"};
+        ListView listView = (ListView) v.findViewById(R.id.sampah_list);
+        // final String[] items = new String[] {"Bukit Pamulang Indah", "Villa Pamulang", "Al Falaah III","Puri Bintaro Hijau","Villa Inti Persada","Taman PAUD Cahaya Agung","RS Griya Pipit VI","Perigi Baru I","Japos Graha Lestari","Perigi Baru II"};
         //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,R.array.tipe_list);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
@@ -81,8 +81,8 @@ public class InputSampahFragment extends Fragment {
                             }
                         })
                         .setNegativeButton(R.string.kembali, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int i) {
+                            @Override
+                            public void onClick(DialogInterface dialog, int i) {
                                 //cancel the dialog
                                 dialog.cancel();
                             }

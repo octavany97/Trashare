@@ -8,7 +8,7 @@
     <color name="colorBackgroundStart">#fafafa</color>
     <color name="colorBackgroundEnd">#00FF00</color>
     <color name="greylight">#fafafa</color>
-
+    <color name="transparent">#00000000</color>
     <!--button-->
     <color name="negative_bg_color">#a00101</color>
     <color name="positive_bg_color">#00bc03</color>
