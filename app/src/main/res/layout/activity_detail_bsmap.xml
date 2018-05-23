@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.ac.umn.trashare.DetailBSMapActivity">
+    <TableRow
+        android:padding="16dp">
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            />
+    </TableRow>
+
+    <TableRow
+    android:gravity="center"
+        >
+    <TextView
+        android:id="@+id/nama_bs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informasi Bank Sampah" />
+    </TableRow>
+    <TableRow
+    android:paddingTop="16dp">
+    <TextView
+        android:paddingLeft="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama : "
+        android:layout_weight="1"/>
+    <TextView
+        android:paddingRight="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/nama_lokasi"
+        android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="100dp"
+    android:gravity="center">
+    <Button
+        android:id="@+id/btn_signup"
+        android:text="Registrasi Nasabah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </TableRow>
+</TableLayout>
