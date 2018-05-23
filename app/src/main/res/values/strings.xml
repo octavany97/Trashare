@@ -48,6 +48,7 @@
     <string name="tipe_sampah_hint">Pilih tipe sampah</string>
     <string name="berat_sampah_hint">Masukkan berat sampah</string>
     <string-array name="tipe_list">
+        <item>Pilih tipe sampah...</item>
         <item>Koran</item>
         <item>Botol</item>
         <item>Besi</item>

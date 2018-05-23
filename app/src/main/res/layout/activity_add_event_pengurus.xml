@@ -5,13 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/bg"
     tools:context="id.ac.umn.trashare.AddEventPengurusActivity">
 
-    <TableRow>
+    <TableRow
+        android:paddingBottom="10dp">
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="serif-monospace"
+            android:textColor="@android:color/black"
+            android:textSize="11dp"
             android:text="Nama Kegiatan :" />
 
         <EditText
@@ -19,30 +25,45 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="11dp"
+
+            android:background="@drawable/et_bg_black"
+            android:textColor="@android:color/black"
             android:inputType="textMultiLine"/>
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:paddingBottom="10dp">
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="11dp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@android:color/black"
             android:text="Deskripsi :" />
 
         <EditText
             android:id="@+id/editDescriptionEvent"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:background="@drawable/et_bg_black"
             android:layout_weight="1"
+            android:textSize="11dp"
             android:inputType="textMultiLine"/>
 
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:paddingBottom="10dp">
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="11dp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@android:color/black"
             android:text="Tempat :" />
 
         <EditText
@@ -50,15 +71,22 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="11dp"
+            android:background="@drawable/et_bg_black"
+            android:textColor="@android:color/black"
             android:inputType="text"/>
 
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:paddingBottom="10dp">
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="11dp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@android:color/black"
             android:text="Tanggal :" />
 
         <EditText
@@ -66,15 +94,22 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="11dp"
+            android:background="@drawable/et_bg_black"
+            android:textColor="@android:color/black"
             android:inputType="date"/>
 
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:paddingBottom="10dp">
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="11dp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@android:color/black"
             android:text="Jam :" />
 
         <EditText
@@ -82,18 +117,25 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="11dp"
+            android:background="@drawable/et_bg_black"
+            android:textColor="@android:color/black"
             android:inputType="time"/>
 
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:paddingBottom="10dp">
         <Button
             android:id="@+id/btnAdd"
+            android:fontFamily="serif-monospace"
+            android:background="@drawable/btn_bg_black"
             android:text="Tambah"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_weight="1"
-            />
+            android:textSize="11dp"
+            android:textColor="@android:color/black"/>
     </TableRow>
 
 </TableLayout>
