@@ -10,11 +10,13 @@
     <TableRow>
         <TextView
             android:layout_width="0dp"
+            android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:text="Nama : "
             android:layout_weight="1"/>
         <EditText
             android:layout_width="0dp"
+            android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:id="@+id/editNama"
             android:layout_weight="1"/>
@@ -22,11 +24,13 @@
     <TableRow>
         <TextView
             android:layout_width="0dp"
+            android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:text="Deskripsi : "
             android:layout_weight="1"/>
         <EditText
             android:layout_width="0dp"
+            android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:id="@+id/editDescription"
             android:layout_weight="1"/>
@@ -34,11 +38,13 @@
     <TableRow>
         <TextView
             android:layout_width="0dp"
+            android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:text="Sponsor : "
             android:layout_weight="1"/>
         <EditText
             android:layout_width="0dp"
+            android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:id="@+id/editSponsor"
             android:layout_weight="1"/>
@@ -46,11 +52,13 @@
     <TableRow>
         <TextView
             android:layout_width="0dp"
+            android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:text="Poin : "
             android:layout_weight="1"/>
         <EditText
             android:layout_width="0dp"
+            android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:id="@+id/editPoint"
             android:layout_weight="1"
@@ -59,6 +67,7 @@
     <TableRow>
         <Button
             android:id="@+id/btnAdd"
+            android:textSize="@dimen/size_12_dp"
             android:text="Tambah"
             android:layout_weight="1"
             android:layout_width="wrap_content"

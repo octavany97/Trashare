@@ -17,7 +17,7 @@
             android:layout_weight="1"
             android:fontFamily="serif-monospace"
             android:textColor="@android:color/black"
-            android:textSize="11dp"
+            android:textSize="@dimen/size_12_dp"
             android:text="Nama Kegiatan :" />
 
         <EditText
@@ -25,7 +25,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="11dp"
+            android:textSize="@dimen/size_12_dp"
 
             android:background="@drawable/et_bg_black"
             android:textColor="@android:color/black"
@@ -38,7 +38,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="11dp"
+            android:textSize="@dimen/size_12_dp"
             android:fontFamily="serif-monospace"
             android:textColor="@android:color/black"
             android:text="Deskripsi :" />
@@ -50,7 +50,7 @@
             android:textColor="@android:color/black"
             android:background="@drawable/et_bg_black"
             android:layout_weight="1"
-            android:textSize="11dp"
+            android:textSize="@dimen/size_12_dp"
             android:inputType="textMultiLine"/>
 
     </TableRow>
@@ -61,7 +61,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="11dp"
+            android:textSize="@dimen/size_12_dp"
             android:fontFamily="serif-monospace"
             android:textColor="@android:color/black"
             android:text="Tempat :" />
@@ -71,7 +71,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="11dp"
+            android:textSize="@dimen/size_12_dp"
             android:background="@drawable/et_bg_black"
             android:textColor="@android:color/black"
             android:inputType="text"/>
@@ -84,7 +84,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="11dp"
+            android:textSize="@dimen/size_12_dp"
             android:fontFamily="serif-monospace"
             android:textColor="@android:color/black"
             android:text="Tanggal :" />
@@ -94,7 +94,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="11dp"
+            android:textSize="@dimen/size_12_dp"
             android:background="@drawable/et_bg_black"
             android:textColor="@android:color/black"
             android:inputType="date"/>
@@ -134,7 +134,7 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_weight="1"
-            android:textSize="11dp"
+            android:textSize="@dimen/size_12_dp"
             android:textColor="@android:color/black"/>
     </TableRow>
 

@@ -10,12 +10,14 @@
     <TableRow>
         <TextView
             android:layout_width="0dp"
+            android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Jenis :" />
 
         <EditText
             android:id="@+id/editJenisSampah"
+            android:textSize="@dimen/size_12_dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -25,6 +27,7 @@
     <TableRow>
         <TextView
             android:layout_width="0dp"
+            android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Harga Nasabah :" />
@@ -32,6 +35,7 @@
         <EditText
             android:id="@+id/editHargaNasabah"
             android:layout_width="0dp"
+            android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:inputType="number"/>
@@ -41,6 +45,7 @@
     <TableRow>
         <TextView
             android:layout_width="0dp"
+            android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Harga Lapak :" />
@@ -50,6 +55,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="@dimen/size_12_dp"
             android:inputType="number"/>
 
     </TableRow>
@@ -60,6 +66,7 @@
             android:text="Tambah"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
+            android:textSize="@dimen/size_12_dp"
             android:layout_weight="1"
             />
     </TableRow>
