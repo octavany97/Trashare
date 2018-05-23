@@ -40,7 +40,7 @@ public class ListBankSampahFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getActivity(), DetailBankSampahActivity.class);
+                Intent intent = new Intent(getActivity(), DetailBSMapActivity.class);
                 //System.out.println(items[i].toString());
                 intent.putExtra("access", access);
                 intent.putExtra("name", items[i].toString());
