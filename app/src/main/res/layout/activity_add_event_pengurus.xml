@@ -17,8 +17,9 @@
             android:layout_weight="1"
             android:fontFamily="serif-monospace"
             android:textColor="@android:color/black"
+            android:textStyle="bold"
             android:textSize="@dimen/size_12_dp"
-            android:text="Nama Kegiatan :" />
+            android:text="Nama Kegiatan" />
 
         <EditText
             android:id="@+id/editNamaEvent"
@@ -39,9 +40,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="@dimen/size_12_dp"
+            android:textStyle="bold"
             android:fontFamily="serif-monospace"
             android:textColor="@android:color/black"
-            android:text="Deskripsi :" />
+            android:text="Deskripsi" />
 
         <EditText
             android:id="@+id/editDescriptionEvent"
@@ -63,8 +65,9 @@
             android:layout_weight="1"
             android:textSize="@dimen/size_12_dp"
             android:fontFamily="serif-monospace"
+            android:textStyle="bold"
             android:textColor="@android:color/black"
-            android:text="Tempat :" />
+            android:text="Tempat" />
 
         <EditText
             android:id="@+id/editTempatEvent"
@@ -86,8 +89,9 @@
             android:layout_weight="1"
             android:textSize="@dimen/size_12_dp"
             android:fontFamily="serif-monospace"
+            android:textStyle="bold"
             android:textColor="@android:color/black"
-            android:text="Tanggal :" />
+            android:text="Tanggal" />
 
         <EditText
             android:id="@+id/editTanggalEvent"
@@ -107,17 +111,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="11dp"
+            android:textSize="@dimen/size_12_dp"
+            android:textStyle="bold"
             android:fontFamily="serif-monospace"
             android:textColor="@android:color/black"
-            android:text="Jam :" />
+            android:text="Jam" />
 
         <EditText
             android:id="@+id/editJamEvent"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="11dp"
+            android:textSize="@dimen/size_12_dp"
             android:background="@drawable/et_bg_black"
             android:textColor="@android:color/black"
             android:inputType="time"/>
@@ -134,6 +139,7 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_weight="1"
+            android:textStyle="bold"
             android:textSize="@dimen/size_12_dp"
             android:textColor="@android:color/black"/>
     </TableRow>

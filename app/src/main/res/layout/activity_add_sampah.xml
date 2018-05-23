@@ -5,11 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="@drawable/bg"
+    android:gravity="center"
     tools:context="id.ac.umn.trashare.AddSampahActivity">
 
-    <TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="0dp"
+            android:textColor="@android:color/black"
             android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -17,6 +21,7 @@
 
         <EditText
             android:id="@+id/editJenisSampah"
+            android:textColor="@android:color/black"
             android:textSize="@dimen/size_12_dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -24,9 +29,11 @@
             android:inputType="textMultiLine"/>
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="0dp"
+            android:textColor="@android:color/black"
             android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -35,6 +42,7 @@
         <EditText
             android:id="@+id/editHargaNasabah"
             android:layout_width="0dp"
+            android:textColor="@android:color/black"
             android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -42,9 +50,11 @@
 
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_12_dp">
         <TextView
             android:layout_width="0dp"
+            android:textColor="@android:color/black"
             android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -53,8 +63,10 @@
         <EditText
             android:id="@+id/editHargaLapak"
             android:layout_width="0dp"
+            android:textColor="@android:color/black"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/et_bg_black"
             android:textSize="@dimen/size_12_dp"
             android:inputType="number"/>
 
@@ -64,9 +76,11 @@
         <Button
             android:id="@+id/btnAdd"
             android:text="Tambah"
+            android:textColor="@android:color/black"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:textSize="@dimen/size_12_dp"
+            android:background="@drawable/btn_bg_black"
             android:layout_weight="1"
             />
     </TableRow>

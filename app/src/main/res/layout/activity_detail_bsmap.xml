@@ -5,6 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="id.ac.umn.trashare.DetailBSMapActivity">
+
+    <TextView
+        android:id="@+id/nama_bs"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_24_dp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informasi Bank Sampah" />
     <TableRow
         android:padding="16dp">
         <fragment
@@ -19,11 +29,7 @@
     <TableRow
     android:gravity="center"
         >
-    <TextView
-        android:id="@+id/nama_bs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Informasi Bank Sampah" />
+
     </TableRow>
     <TableRow
     android:paddingTop="16dp">
