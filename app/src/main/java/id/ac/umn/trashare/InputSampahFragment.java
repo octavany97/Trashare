@@ -3,6 +3,7 @@ package id.ac.umn.trashare;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,8 +14,12 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Octavany on 5/14/2018.
@@ -22,31 +27,23 @@ import android.widget.Spinner;
 
 public class InputSampahFragment extends Fragment {
     int id_tipe = 0;
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         //return inflater.inflate(R.layout.fragment_menu_register_bank_sampah, container, false);
         View v = inflater.inflate(R.layout.fragment_menu_input_sampah, container, false);
 
-        ListView listView = (ListView) v.findViewById(R.id.sampah_list);
-        // final String[] items = new String[] {"Bukit Pamulang Indah", "Villa Pamulang", "Al Falaah III","Puri Bintaro Hijau","Villa Inti Persada","Taman PAUD Cahaya Agung","RS Griya Pipit VI","Perigi Baru I","Japos Graha Lestari","Perigi Baru II"};
-        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,R.array.tipe_list);
-
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-                this.getActivity(),
-                R.array.tipe_list,
-                android.R.layout.simple_list_item_1
-        );
+        final ListView listView = (ListView) v.findViewById(R.id.sampah_list);
+        final List<String> list = new ArrayList<String>();
+        final ArrayAdapter adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, list);
         listView.setAdapter(adapter);
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //Intent intent = new Intent(getActivity(), DetailBankSampahActivity.class);
-                //System.out.println(items[i].toString());
-//                intent.putExtra("access", access);
-//                intent.putExtra("name", items[i].toString());
-                //startActivity(intent);
-                // Toast.makeText(getActivity().getApplicationContext(),items[i], Toast.LENGTH_SHORT).show();
+
             }
         });
 
@@ -56,28 +53,33 @@ public class InputSampahFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-                //builder.setMessage();
-                LayoutInflater inflater = getActivity().getLayoutInflater();
+
+                View viewDialog = LayoutInflater.from(getActivity()).inflate(R.layout.dialog_edit_input_sampah, (ViewGroup) getView(), false);
+
+                final Spinner spinnerSampah = (Spinner) viewDialog.findViewById(R.id.spinner_jenis_sampah);
+
+                //LayoutInflater inflater = getActivity().getLayoutInflater();
                 ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                         getActivity(),
                         R.array.tipe_list,
                         android.R.layout.simple_dropdown_item_1line
                 );
-                builder.setView(inflater.inflate(R.layout.dialog_edit_input_sampah, null))
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                spinnerSampah.setAdapter(adapter);
+                final EditText beratEdit = (EditText)viewDialog.findViewById(R.id.berat_edit);
+                builder.setView(viewDialog)
                         .setPositiveButton(R.string.tambah, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 //tambah ke database
                                 //ntar list view nya bertambah
+                                list.add(String.format("%s - %s kg", spinnerSampah.getSelectedItem().toString(), beratEdit.getText().toString()));
 
                                 dialogInterface.cancel();
-                            }
-                        })
-                        .setAdapter(adapter, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                System.out.println(i);
-                                id_tipe = i;
+
+                                //buat refresh klo ud ada db
+                                /*FragmentTransaction ft = getFragmentManager().beginTransaction();
+                                ft.detach(InputSampahFragment.this).attach(InputSampahFragment.this).commit();*/
                             }
                         })
                         .setNegativeButton(R.string.kembali, new DialogInterface.OnClickListener() {

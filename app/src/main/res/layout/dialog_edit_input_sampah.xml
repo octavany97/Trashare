@@ -14,17 +14,23 @@
         android:gravity="center"
         android:text="PILIH SAMPAH"/>
 
-    <AutoCompleteTextView
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_jenis_sampah" />
+
+    <!--<AutoCompleteTextView
         android:id="@+id/tipe_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="Piiih tipe sampah"/>
+        android:hint="Piiih tipe sampah"/>-->
 
     <EditText
         android:id="@+id/berat_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
         android:hint="@string/berat_sampah_hint"/>
 
 
