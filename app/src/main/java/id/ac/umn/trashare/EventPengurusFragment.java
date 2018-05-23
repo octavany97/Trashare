@@ -20,7 +20,6 @@ public class EventPengurusFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        //return inflater.inflate(R.layout.fragment_menu_event_yayasan, container, false);
 
         View v = inflater.inflate(R.layout.fragment_menu_event_pengurus, container, false);
 

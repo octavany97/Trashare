@@ -6,11 +6,13 @@
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:background="@color/colorMenu"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/md_black_1000"
     tools:context="id.ac.umn.trashare.FormRegistrasiBankSampahActivity">
 
+    <!--logo-->
     <LinearLayout android:orientation="vertical">
-
         <ImageView
             android:layout_width="230dp"
             android:layout_height="100dp"
@@ -18,121 +20,204 @@
             android:background="@drawable/logoputih" />
     </LinearLayout>
 
+
+    <!--judul-->
     <TableRow>
         <TextView
             android:text="FORMULIR PENDAFTARAN BANK SAMPAH"
+            android:textColor="@color/colorWhite"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textAlignment="center"
             android:fontFamily="serif-monospace"
+            android:textStyle="normal"
             android:paddingTop="30dp"
             android:lines="3"
             android:textSize="13dp" />
     </TableRow>
 
+
+    <!--nama bank sampah-->
     <TableRow>
         <TextView
-            android:layout_width="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Nama Bank Sampah              :"
+            android:textColor="@color/colorWhite"
+            android:text="Nama Bank Sampah"
             android:textSize="11dp"
-            android:layout_weight="0"/>
+            android:layout_weight="1"/>
         <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:hint="nama bank sampah"
+            android:textSize="11dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/greylight"
+            android:textColor="@color/colorWhite"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
             android:id="@+id/nama_banksampah_edit"
+            android:background="@drawable/et_bg"
             android:inputType="text"
             android:layout_weight="1"/>
     </TableRow>
 
-    <TableRow>
+
+    <!--nama kepala bank sampah-->
+    <TableRow
+        android:layout_marginTop="10dp">
         <TextView
-            android:layout_width="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Nama Kepala Bank Sampah :"
+            android:textColor="@color/colorWhite"
+            android:text="Nama Ketua"
             android:textSize="11dp"
-            android:layout_weight="0"/>
+            android:layout_weight="1"/>
         <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:hint="nama ketua"
+            android:textSize="11dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/greylight"
+            android:textColor="@color/colorWhite"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
             android:id="@+id/nama_ketua_edit"
+            android:background="@drawable/et_bg"
             android:inputType="text"
             android:layout_weight="1"/>
     </TableRow>
-    <TableRow>
+
+
+    <!--alamat-->
+    <TableRow
+        android:layout_marginTop="10dp">
         <TextView
-            android:layout_width="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Alamat                                      :"
+            android:text="Alamat"
             android:textSize="11dp"
-            android:layout_weight="0"/>
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"/>
         <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:hint="alamat"
+            android:textSize="11dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/greylight"
+            android:textColor="@color/colorWhite"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
             android:id="@+id/alamat_edit"
+            android:background="@drawable/et_bg"
             android:inputType="textMultiLine"
             android:layout_weight="1"/>
     </TableRow>
 
-    <TableRow>
+
+
+    <!--wilayah-->
+    <TableRow
+        android:layout_marginTop="10dp">
         <TextView
-            android:layout_width="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Wilayah                                     :"
+            android:text="Wilayah"
             android:textSize="11dp"
-            android:layout_weight="0"/>
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"/>
         <Spinner
+            android:textSize="11dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/greylight"
+            android:textColor="@color/colorWhite"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
             android:id="@+id/spinner_wilayah"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-    </TableRow>
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Telepon                                    :"
-            android:textSize="11dp"
-            android:layout_weight="0"/>
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/telepon_edit"
-            android:inputType="phone"
-            android:layout_weight="1"/>
-    </TableRow>
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email                                         :"
-            android:textSize="11dp"
-            android:layout_weight="0"/>
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/email_edit"
+            android:background="@drawable/et_bg"
             android:inputType="text"
             android:layout_weight="1"/>
     </TableRow>
+
+
+    <!--telepon-->
+    <TableRow
+        android:layout_marginTop="10dp">
+        <TextView
+            android:fontFamily="serif-monospace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Telepon"
+            android:textSize="11dp"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"/>
+        <EditText
+            android:hint="telepon"
+            android:textSize="11dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/greylight"
+            android:textColor="@color/colorWhite"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:id="@+id/telepon_edit"
+            android:background="@drawable/et_bg"
+            android:inputType="text"
+            android:layout_weight="1"/>
+    </TableRow>
+
+
+    <!--email-->
+    <TableRow
+        android:layout_marginTop="10dp">
+        <TextView
+            android:fontFamily="serif-monospace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="11dp"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"/>
+        <EditText
+            android:hint="email"
+            android:textSize="11dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/greylight"
+            android:textColor="@color/colorWhite"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:id="@+id/email_edit"
+            android:background="@drawable/et_bg"
+            android:inputType="text"
+            android:layout_weight="1"/>
+    </TableRow>
+
+
+    <!--button-->
     <LinearLayout
         android:orientation="horizontal"
         android:paddingTop="16dp">
         <Button
-            android:layout_width="wrap_content"
+            android:textSize="10dp"
+            android:fontFamily="serif-monospace"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:text="Register"
-            android:background="@color/transparent"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn_bg"
             android:id="@+id/btnRegister"/>
         <Button
-            android:layout_width="wrap_content"
+            android:textSize="10dp"
+            android:fontFamily="serif-monospace"
+            android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:text="Cancel"
-            android:background="@color/transparent"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn_bg"
             android:id="@+id/btnCancel"/>
     </LinearLayout>
-
 </TableLayout>

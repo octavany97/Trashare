@@ -7,7 +7,7 @@
     <color name="colorMenu">#00bc03</color>
     <color name="colorBackgroundStart">#fafafa</color>
     <color name="colorBackgroundEnd">#00FF00</color>
-    <color name="greylight">#fafafa</color>
+    <color name="greylight">#a7a0a0</color>
     <color name="transparent">#00000000</color>
     <!--button-->
     <color name="negative_bg_color">#a00101</color>

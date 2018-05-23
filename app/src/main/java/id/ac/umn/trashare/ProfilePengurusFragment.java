@@ -15,12 +15,12 @@ public class ProfilePengurusFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState){
         View v = inflater.inflate(R.layout.fragment_menu_profile_pengurus, container, false);
 
-        Button btnUbahPass = (Button) v.findViewById(R.id.ubahpass_btn);
+        Button btnUbahPass = (Button) v.findViewById(R.id.change_pass_btn);
         btnUbahPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getActivity(), GantiPasswordActivity.class);
-                startActivity(i);
+                Intent intent = new Intent(getActivity(), GantiPasswordActivity.class);
+                startActivity(intent);
             }
         });
 
