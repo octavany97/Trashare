@@ -64,20 +64,19 @@
         <ImageView
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_vpn_key_black_24dp" />
+            android:src="@drawable/ic_menu_manage" />
 
         <Spinner
+            android:backgroundTint="@color/md_black_1000"
             android:textSize="11dp"
             android:textAlignment="center"
             android:textColor="@color/md_black_1000"
             android:layout_width="0dp"
             android:layout_height="25dp"
             android:id="@+id/spinner_wilayah"
-            android:background="@drawable/et_bg_black"
-            android:inputType="text"
             android:fontFamily="serif-monospace"
             android:textStyle="bold"
-            android:layout_weight="1"/>
+            android:layout_weight="3"/>
     </TableRow>
 
 

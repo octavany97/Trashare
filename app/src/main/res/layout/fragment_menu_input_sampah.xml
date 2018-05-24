@@ -61,12 +61,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#5000000"
+                android:alpha="0.5"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:fontFamily="serif-monospace"
                 android:textStyle="bold"
                 android:textSize="@dimen/size_12_dp"
                 android:foreground="?attr/selectableItemBackground"
-                android:textColor="#555"
+                android:textColor="@android:color/black"
                 android:text="tambah sampah" />
         </TableRow>
         <TableRow
