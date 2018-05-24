@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:padding="@dimen/size_16_dp"
     android:background="@drawable/bg">
 
     <LinearLayout android:orientation="vertical">
@@ -30,71 +31,116 @@
             android:textColor="@android:color/black"
             android:textSize="@dimen/size_12_dp" />
     </TableRow>
-    <TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nama :"
-            android:layout_weight="1"/>
+            android:text="Nama"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_12_dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/nama_edit"
             android:inputType="text"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_12_dp"
+            android:background="@drawable/et_bg_black"
+            android:padding="@dimen/padding_edit_text"/>
     </TableRow>
-    <TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Alamat :"
-            android:layout_weight="1"/>
+            android:text="Alamat"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_12_dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/alamat_edit"
             android:inputType="textMultiLine"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_12_dp"
+            android:background="@drawable/et_bg_black"
+            android:padding="@dimen/padding_edit_text"/>
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RT / RW : "
-            android:layout_weight="1"/>
+            android:text="RT / RW"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_12_dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/rtrw_edit"
             android:inputType="text"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_12_dp"
+            android:background="@drawable/et_bg_black"
+            android:padding="@dimen/padding_edit_text"/>
     </TableRow>
-    <TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Telepon : "
-            android:layout_weight="1"/>
+            android:text="Telepon"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_12_dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/telepon_edit"
             android:inputType="phone"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_12_dp"
+            android:background="@drawable/et_bg_black"
+            android:padding="@dimen/padding_edit_text"/>
     </TableRow>
-    <TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Email"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_12_dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/email_edit"
             android:inputType="text"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_12_dp"
+            android:background="@drawable/et_bg_black"
+            android:padding="@dimen/padding_edit_text"/>
     </TableRow>
     <LinearLayout
         android:orientation="horizontal"
@@ -105,14 +151,13 @@
             android:layout_height="wrap_content"
             android:text="Register"
             android:background="@drawable/btn_bg_black"
-
             android:id="@+id/regis_btn"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Cancel"
-
+            android:background="@drawable/btn_bg_black"
             android:id="@+id/cancel_btn"/>
     </LinearLayout>
 
