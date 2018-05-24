@@ -5,84 +5,120 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="@drawable/bg"
+    android:gravity="center"
     tools:context="id.ac.umn.trashare.DetailEventPengurusActivity">
 
-    <TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Nama Kegiatan :" />
+            android:text="Nama Kegiatan"
+            android:textColor="@android:color/black"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_12_dp"/>
 
         <EditText
             android:id="@+id/editNamaEvent"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/et_bg_black"
             android:inputType="textMultiLine"/>
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Deskripsi :" />
+            android:text="Deskripsi"
+            android:textColor="@android:color/black"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_12_dp"/>
 
         <EditText
             android:id="@+id/editDescriptionEvent"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/et_bg_black"
             android:inputType="textMultiLine"/>
 
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Tempat :" />
+            android:text="Tempat"
+            android:textColor="@android:color/black"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_12_dp"/>
 
         <EditText
             android:id="@+id/editTempatEvent"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/et_bg_black"
             android:inputType="text"/>
 
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Tanggal :" />
+            android:text="Tanggal"
+            android:textColor="@android:color/black"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_12_dp"/>
 
         <EditText
             android:id="@+id/editTanggalEvent"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/et_bg_black"
             android:inputType="date"/>
 
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Jam :" />
+            android:text="Jam"
+            android:textColor="@android:color/black"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_12_dp"/>
 
         <EditText
             android:id="@+id/editJamEvent"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="25dp"
             android:layout_weight="1"
-            android:inputType="time"/>
+            android:inputType="time"
+            android:textColor="@android:color/black"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:background="@drawable/et_bg_black"
+            android:textSize="@dimen/size_12_dp"/>
 
     </TableRow>
 
@@ -93,7 +129,11 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_weight="1"
-            />
+            android:background="@drawable/btn_bg_black"
+            android:textColor="@android:color/black"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_12_dp"/>
     </TableRow>
 
 </TableLayout>

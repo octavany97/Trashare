@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:weightSum="10"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/bg">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -14,9 +15,11 @@
         <TextView
             android:id="@+id/textGrid"
             android:text="BERANDA"
-            android:textSize="34sp"
+            android:textSize="@dimen/size_32_dp"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
             android:layout_centerInParent="true"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@android:color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </RelativeLayout>
