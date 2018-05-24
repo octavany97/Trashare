@@ -36,7 +36,7 @@ public class LoginFragment extends Fragment {
 
         final EditText username = (EditText) getActivity().findViewById(R.id.username_edit);
         final EditText password = (EditText) getActivity().findViewById(R.id.password_edit);
-        CardView cardLogin = (CardView) getActivity().findViewById(R.id.cardLogin);
+        Button cardLogin = (Button) getActivity().findViewById(R.id.cardLogin);
         //Button loginBtn = (Button) getActivity().findViewById(R.id.btnLogin);
         cardLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +69,7 @@ public class LoginFragment extends Fragment {
             }
         });
 
-        CardView cardSignUp = (CardView) getActivity().findViewById(R.id.cardRegister);
+        Button cardSignUp = (Button) getActivity().findViewById(R.id.cardRegister);
         cardSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

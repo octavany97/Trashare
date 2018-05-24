@@ -3,12 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/bg">
 
     <CalendarView
         android:id="@+id/calenderview"
         android:layout_width="350dp"
         android:layout_height="350dp"
+        android:background="@drawable/calender"
         android:layout_gravity="center"/>
 
 
@@ -31,7 +33,9 @@
     <Button
         android:layout_gravity="center_horizontal"
         android:text="Update"
+        android:background="@drawable/btn_bg_black"
+        android:layout_margin="@dimen/size_12_dp"
         android:id="@+id/btn_update_tanggal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>
