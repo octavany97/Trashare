@@ -4,20 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
-    android:background="@color/md_black_1000"
+    android:padding="@dimen/size_20_dp"
+    android:background="@drawable/bg"
+    android:gravity="center"
     tools:context="id.ac.umn.trashare.FormRegistrasiBankSampahActivity">
 
     <!--logo-->
     <LinearLayout android:orientation="vertical">
         <ImageView
-            android:layout_width="230dp"
-            android:layout_height="100dp"
+            android:layout_width="330dp"
+            android:layout_height="130dp"
             android:layout_gravity="center"
-            android:background="@drawable/logoputih" />
+            android:background="@drawable/logowarna" />
     </LinearLayout>
 
 
@@ -25,13 +23,13 @@
     <TableRow>
         <TextView
             android:text="FORMULIR PENDAFTARAN BANK SAMPAH"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/md_black_1000"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textAlignment="center"
             android:fontFamily="serif-monospace"
-            android:textStyle="normal"
+            android:textStyle="bold"
             android:paddingTop="30dp"
             android:lines="3"
             android:textSize="13dp" />
@@ -44,21 +42,21 @@
             android:fontFamily="serif-monospace"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/md_black_1000"
             android:text="Nama Bank Sampah"
             android:textSize="11dp"
+            android:textStyle="bold"
             android:layout_weight="1"/>
         <EditText
-            android:hint="nama bank sampah"
             android:textSize="11dp"
             android:textAlignment="center"
-            android:textColorHint="@color/greylight"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/md_black_1000"
             android:layout_width="0dp"
             android:layout_height="25dp"
             android:id="@+id/nama_banksampah_edit"
-            android:background="@drawable/et_bg"
+            android:background="@drawable/et_bg_black"
             android:inputType="text"
+            android:textStyle="bold"
             android:layout_weight="1"/>
     </TableRow>
 
@@ -70,21 +68,21 @@
             android:fontFamily="serif-monospace"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/md_black_1000"
             android:text="Nama Ketua"
             android:textSize="11dp"
+            android:textStyle="bold"
             android:layout_weight="1"/>
         <EditText
-            android:hint="nama ketua"
             android:textSize="11dp"
             android:textAlignment="center"
-            android:textColorHint="@color/greylight"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/md_black_1000"
             android:layout_width="0dp"
             android:layout_height="25dp"
             android:id="@+id/nama_ketua_edit"
-            android:background="@drawable/et_bg"
+            android:background="@drawable/et_bg_black"
             android:inputType="text"
+            android:textStyle="bold"
             android:layout_weight="1"/>
     </TableRow>
 
@@ -98,18 +96,18 @@
             android:layout_height="wrap_content"
             android:text="Alamat"
             android:textSize="11dp"
-            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textColor="@color/md_black_1000"
             android:layout_weight="1"/>
         <EditText
-            android:hint="alamat"
             android:textSize="11dp"
             android:textAlignment="center"
-            android:textColorHint="@color/greylight"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/md_black_1000"
             android:layout_width="0dp"
             android:layout_height="25dp"
             android:id="@+id/alamat_edit"
-            android:background="@drawable/et_bg"
+            android:textStyle="bold"
+            android:background="@drawable/et_bg_black"
             android:inputType="textMultiLine"
             android:layout_weight="1"/>
     </TableRow>
@@ -126,18 +124,20 @@
             android:layout_height="wrap_content"
             android:text="Wilayah"
             android:textSize="11dp"
-            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textColor="@color/md_black_1000"
             android:layout_weight="1"/>
         <Spinner
             android:textSize="11dp"
             android:textAlignment="center"
-            android:textColorHint="@color/greylight"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/md_black_1000"
             android:layout_width="0dp"
             android:layout_height="25dp"
             android:id="@+id/spinner_wilayah"
-            android:background="@drawable/et_bg"
+            android:background="@drawable/et_bg_black"
             android:inputType="text"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
             android:layout_weight="1"/>
     </TableRow>
 
@@ -151,19 +151,19 @@
             android:layout_height="wrap_content"
             android:text="Telepon"
             android:textSize="11dp"
-            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textColor="@color/md_black_1000"
             android:layout_weight="1"/>
         <EditText
-            android:hint="telepon"
             android:textSize="11dp"
             android:textAlignment="center"
-            android:textColorHint="@color/greylight"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/md_black_1000"
             android:layout_width="0dp"
             android:layout_height="25dp"
             android:id="@+id/telepon_edit"
-            android:background="@drawable/et_bg"
+            android:background="@drawable/et_bg_black"
             android:inputType="text"
+            android:textStyle="bold"
             android:layout_weight="1"/>
     </TableRow>
 
@@ -177,19 +177,19 @@
             android:layout_height="wrap_content"
             android:text="Email"
             android:textSize="11dp"
-            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textColor="@color/md_black_1000"
             android:layout_weight="1"/>
         <EditText
-            android:hint="email"
             android:textSize="11dp"
             android:textAlignment="center"
-            android:textColorHint="@color/greylight"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/md_black_1000"
             android:layout_width="0dp"
             android:layout_height="25dp"
             android:id="@+id/email_edit"
-            android:background="@drawable/et_bg"
+            android:background="@drawable/et_bg_black"
             android:inputType="text"
+            android:textStyle="bold"
             android:layout_weight="1"/>
     </TableRow>
 
@@ -206,8 +206,9 @@
             android:layout_weight="1"
             android:layout_height="35dp"
             android:text="Register"
-            android:textColor="@color/colorWhite"
-            android:background="@drawable/btn_bg"
+            android:textStyle="bold"
+            android:textColor="@color/md_black_1000"
+            android:background="@drawable/btn_bg_black"
             android:id="@+id/btnRegister"/>
         <Button
             android:textSize="10dp"
@@ -216,8 +217,9 @@
             android:layout_weight="1"
             android:layout_height="35dp"
             android:text="Cancel"
-            android:textColor="@color/colorWhite"
-            android:background="@drawable/btn_bg"
+            android:textStyle="bold"
+            android:textColor="@color/md_black_1000"
+            android:background="@drawable/btn_bg_black"
             android:id="@+id/btnCancel"/>
     </LinearLayout>
 </TableLayout>

@@ -4,59 +4,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="@dimen/size_20_dp"
+    android:gravity="center"
+    android:background="@drawable/bg"
     tools:context="id.ac.umn.trashare.SignUpActivity">
 
     <TableRow>
         <TextView
-            android:layout_width="wrap_content"
+            android:paddingBottom="@dimen/size_24_dp"
+            android:text="Sign Up"
+            android:textSize="@dimen/size_30_dp"
+            android:fontFamily="serif-monospace"
+            android:textAlignment="center"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Nama :"
-            android:layout_weight="1"/>
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/editName"
-            android:inputType="text"
             android:layout_weight="1"/>
     </TableRow>
 
+    <!--nama-->
     <TableRow>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Email :"
+            android:text="Nama"
+            android:textSize="11dp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/md_black_1000"
+            android:textStyle="bold"
             android:layout_weight="1"/>
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/editEmail"
+            android:fontFamily="serif-monospace"
+            android:id="@+id/editName"
             android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/md_black_1000"
+            android:background="@drawable/et_bg_black"
             android:layout_weight="1"/>
     </TableRow>
-    <TableRow>
+
+    <!--email-->
+    <TableRow
+        android:paddingTop="@dimen/size_20_dp">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Password :"
+            android:text="Email"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
             android:layout_weight="1"/>
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="0dp   "
             android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:id="@+id/editEmail"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/md_black_1000"
+            android:background="@drawable/et_bg_black"
+            android:layout_weight="1"/>
+    </TableRow>
+
+    <!--password-->
+    <TableRow
+        android:paddingTop="@dimen/size_20_dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
             android:id="@+id/editPassword"
+            android:textAlignment="center"
             android:inputType="textPassword"
+            android:textColor="@color/md_black_1000"
+            android:background="@drawable/et_bg_black"
             android:layout_weight="1" />
     </TableRow>
 
 
 
-    <TableLayout>
+    <TableLayout
+        android:paddingTop="@dimen/size_20_dp">
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:id="@+id/btnSignUp"
+            android:background="@drawable/btn_bg_black"
             android:text="Daftar"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_12_dp"
             />
     </TableLayout>
 </TableLayout>

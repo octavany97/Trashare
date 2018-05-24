@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:weightSum="10"
+    android:background="@drawable/bg"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -13,16 +15,18 @@
 
         <TextView
             android:id="@+id/textGrid"
-            android:text="BERANDA"
-            android:textSize="34sp"
+            android:text="News Highlight"
+            android:textSize="@dimen/size_24_dp"
+            android:fontFamily="serif-monospace"
             android:layout_centerInParent="true"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/md_black_1000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </RelativeLayout>
 
     <ListView
         android:id="@+id/listBeranda"
+        android:fontFamily="serif-monospace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
