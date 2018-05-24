@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="@dimen/size_16_dp"
     android:background="@drawable/bg"
     android:gravity="center"
     tools:context="id.ac.umn.trashare.AddSampahActivity">
@@ -13,11 +13,13 @@
         android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="0dp"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
             android:textColor="@android:color/black"
             android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Jenis :" />
+            android:text="Jenis" />
 
         <EditText
             android:id="@+id/editJenisSampah"
@@ -26,6 +28,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/et_bg_black"
             android:inputType="textMultiLine"/>
     </TableRow>
 
@@ -34,10 +37,12 @@
         <TextView
             android:layout_width="0dp"
             android:textColor="@android:color/black"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
             android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Harga Nasabah :" />
+            android:text="Harga Nasabah" />
 
         <EditText
             android:id="@+id/editHargaNasabah"
@@ -45,6 +50,7 @@
             android:textColor="@android:color/black"
             android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/et_bg_black"
             android:layout_weight="1"
             android:inputType="number"/>
 
@@ -55,10 +61,12 @@
         <TextView
             android:layout_width="0dp"
             android:textColor="@android:color/black"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
             android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Harga Lapak :" />
+            android:text="Harga Lapak" />
 
         <EditText
             android:id="@+id/editHargaLapak"

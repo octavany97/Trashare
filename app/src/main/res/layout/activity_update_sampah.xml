@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="@drawable/bg"
+    android:gravity="center"
     tools:context="id.ac.umn.trashare.UpdateSampahActivity">
 
     <TableRow>
@@ -64,7 +66,10 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_weight="1"
-            />
+            android:fontFamily="serif-monospace"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_12_dp"
+            android:textStyle="bold"/>
         <Button
             android:id="@+id/btnBack"
             android:text="Kembali"

@@ -8,6 +8,12 @@
 
     <string name="judul">PANDUAN PENDIRIAN BANK SAMPAH</string>
 
+    <string-array name="tipe_pengguna">
+        <item>Member</item>
+        <item>Pengurus</item>
+        <item>Yayasan</item>
+    </string-array>
+
     <string-array name="lokasi">
         <item>Pamulang</item>
         <item>Tangerang Kota</item>
