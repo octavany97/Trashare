@@ -15,21 +15,20 @@ import android.widget.ListView;
  */
 
 public class BerandaFragment extends Fragment{
+    ListView listBeranda;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        //return super.onCreateView(inflater, container, savedInstanceState);
         //returning our layout file
         //change R.layout.yourlayoutfilename for each of your fragments
-        //return inflater.inflate(R.layout.fragment_menu_beranda, container, false);
         View v = inflater.inflate(R.layout.fragment_menu_beranda, container, false);
 
-
-        ListView listView =(ListView) v.findViewById(R.id.listBeranda);
-        final String[] items = new String[] {"EVENT 1", "EVENT 2", "EVENT 3","EVENT 4","EVENT 5","EVENT 6","EVENT 7","EVENT 8","EVENT 9","EVENT 10"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,items);
-        listView.setAdapter(adapter);
-
+        listBeranda =(ListView) v.findViewById(R.id.listBeranda);
+        final String[][] items = new String[][] {{"EVENT 1", "Tanggal 1", "logoputih"}, {"EVENT 2", "Tanggal 2", "logowarna"}, {"EVENT 3", "Tanggal 3", "logowarna2"}, {"EVENT 4", "Tanggal 4", "logoputih"}, {"EVENT 5", "Tanggal 5", "logowarna"},
+                {"EVENT 6", "Tanggal 6", "logowarna2"},{"EVENT 7", "Tanggal 7", "logoputih"},{"EVENT 8", "Tanggal 8", "logowarna"},{"EVENT 9", "Tanggal 9", "logowarna2"},{"EVENT 10", "Tanggal 10", "logoputih"}};
+        ListViewAdapter adapter = new ListViewAdapter(getActivity(), items);
+        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,items);
+        listBeranda.setAdapter(adapter);
 
         return v;
 
