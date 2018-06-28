@@ -42,6 +42,23 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
+                        android:text="ID Member"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </TableRow>
+                <TableRow>
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_profile" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
                         android:text="Nama Member"
                         android:textColor="#000"
                         android:textSize="15sp"
@@ -123,13 +140,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Poin"
+                        android:text="Saldo"
                         android:textColor="@color/greylight"
                         android:textSize="15sp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="250"
+                        android:text="20000"
                         android:textStyle="bold"
                         android:textSize="15sp"
                         android:paddingTop="30dp"/>

@@ -12,7 +12,103 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/judul"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:id="@+id/panduan"/>
+
+    <ScrollView
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/panduan"
+        android:layout_above="@+id/btn_register">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/panduan"/>
+            <TextView
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAHA"/>
+            <TextView
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAHA"/>
+            <TextView
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAHA"/>
+            <TextView
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAHA"/>
+            <TextView
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAHA"/>
+            <TextView
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAHA"/>
+            <TextView
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAHA"/>
+            <TextView
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAHA"/>
+            <TextView
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAHA"/>
+            <TextView
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAHA"/>
+            <TextView
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAHA"/>
+            <TextView
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAHA"/>
+            <TextView
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAHA"/>
+            <TextView
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAHA"/>
+            <TextView
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAHA"/>
+        </LinearLayout>
+    </ScrollView>
 
     <Button
         android:layout_centerHorizontal="true"

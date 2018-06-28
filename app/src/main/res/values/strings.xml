@@ -8,6 +8,12 @@
 
     <string name="judul">PANDUAN PENDIRIAN BANK SAMPAH</string>
 
+    <string name="panduan">\t1. Ketuhanan Yang Maha Esa\n
+        \t\t\t2. Kemanusiaan yang adil dan beradab\n
+        \t\t3. Persatuan Indonesia\n
+        4. Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan
+        5. Keadilan sosial bagi seluruh bangsa Indonesia</string>
+
     <string-array name="tipe_pengguna">
         <item>Member</item>
         <item>Pengurus</item>
