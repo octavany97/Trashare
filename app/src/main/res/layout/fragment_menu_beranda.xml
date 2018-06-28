@@ -2,13 +2,11 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
     android:weightSum="10"
     android:background="@drawable/bg"
     android:orientation="vertical">
-    android:orientation="vertical"
-    android:background="@drawable/bg">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -19,7 +17,6 @@
             android:id="@+id/textGrid"
             android:text="BERANDA"
             android:textSize="@dimen/size_32_dp"
-            android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:layout_centerInParent="true"
             android:textColor="@android:color/black"
@@ -29,11 +26,8 @@
 
     <ListView
         android:id="@+id/listBeranda"
-        android:fontFamily="serif-monospace"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
     </ListView>
-
-
 </LinearLayout>
