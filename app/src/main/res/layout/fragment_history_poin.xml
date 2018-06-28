@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:background="@drawable/bg"
-    tools:context="id.ac.umn.trashare.HistoryPoinActivity">
+    tools:context="id.ac.umn.trashare.HistoryPoinFragment">
 
     <TableRow>
         <TextView
@@ -20,7 +20,6 @@
             android:textSize="@dimen/size_24_dp"
             android:layout_weight="1"/>
     </TableRow>
-
 
     <TableLayout
         android:layout_width="match_parent"

@@ -7,12 +7,14 @@
     <string name="action_settings">Settings</string>
 
     <string name="judul">PANDUAN PENDIRIAN BANK SAMPAH</string>
-
-    <string name="panduan">\t1. Ketuhanan Yang Maha Esa\n
-        \t\t\t2. Kemanusiaan yang adil dan beradab\n
-        \t\t3. Persatuan Indonesia\n
-        4. Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan
-        5. Keadilan sosial bagi seluruh bangsa Indonesia</string>
+    <string name="judulpanduan">PANCASILA</string>
+    <string name="panduan"> \n
+        1. Ketuhanan Yang Maha Esa\n
+        2. Kemanusiaan yang adil dan beradab\n
+        3. Persatuan Indonesia\n
+        4. Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan\n
+        5. Keadilan sosial bagi seluruh bangsa Indonesia
+    </string>
 
     <string-array name="tipe_pengguna">
         <item>Member</item>
