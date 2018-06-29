@@ -18,13 +18,15 @@
             android:textStyle="bold"
             android:textColor="@android:color/black"
             android:textSize="@dimen/size_24_dp"
+            android:paddingBottom="16dp"
             android:layout_weight="1"/>
     </TableRow>
 
-    <TableLayout
+    <ListView
+        android:id="@+id/listHistori"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:stretchColumns="0, 1, 2, 3"
-        android:id="@+id/tblHistory" />
+        android:visibility="visible">
+    </ListView>
 
 </TableLayout>

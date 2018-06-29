@@ -1,6 +1,6 @@
 package id.ac.umn.trashare;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.graphics.Color;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -8,19 +8,26 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
 public class HistoryPoinFragment extends Fragment {
     View v;
-    public HistoryPoinFragment() {
-    }
+    private ListView listHistori;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.fragment_history_poin,container,false);
+
+        listHistori =(ListView) v.findViewById(R.id.listHistori);
+        final String[][] items = new String[][] {{"100 poin", "Tukar dengan hadiah apa aja lah", "05-05-2015", "logoputih"}, {"200 poin", "Nambah cuy poin nya", "06-06-2016", "logowarna"}};
+        ListViewAdapter adapter = new ListViewAdapter(getActivity(), items, 3);
+        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,items);
+        listHistori.setAdapter(adapter);
+
         return v;
     }
 

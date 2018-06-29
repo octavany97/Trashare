@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -16,11 +17,19 @@ import android.widget.TextView;
  */
 
 public class TabunganSayaFragment extends Fragment {
+    ListView listView;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_menu_tabungan_saya, container, false);
 
+        listView = (ListView) v.findViewById(R.id.listTabungan);
+        final String[][] items = new String[][] {{"EVENT 1", "Tanggal 1", "HAHA", "logoputih"}, {"EVENT 2", "Tanggal 2", "HIHI", "logowarna"}};
+        ListViewAdapter adapter = new ListViewAdapter(getActivity(), items, 3);
+        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,items);
+        listView.setAdapter(adapter);
+        /*
         TableLayout tblHistory = v.findViewById(R.id.tblHistory);
 
         TableRow tr_head = new TableRow(this.getActivity());
@@ -85,7 +94,7 @@ public class TabunganSayaFragment extends Fragment {
             ));
             i++;
         }
-
+*/
         return v;
     }
 

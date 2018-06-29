@@ -74,4 +74,8 @@
     <string name="tambah">Tambah</string>
     <string name="kembali">Kembali</string>
     <string name="title_activity_detail_bsmap">Map</string>
+    <string name="title_activity_poin_member">PoinMemberActivity</string>
+    <string name="tab_text_1">Poin</string>
+    <string name="tab_text_2">Histori</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>

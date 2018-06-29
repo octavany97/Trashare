@@ -1,6 +1,6 @@
 package id.ac.umn.trashare;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -15,13 +15,19 @@ import android.widget.ListView;
 public class PoinSayaFragment extends Fragment{
 
     View v;
-    public PoinSayaFragment() {
-    }
-
+    private ListView listHadiah;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.fragment_poin_saya,container,false);
+
+        listHadiah =(ListView) v.findViewById(R.id.listHadiah);
+        final String[][] items = new String[][] {{"Vocer Steam - 500", "Dapet saldo steam 5$", "logoputih"}, {"Pocer Pebeh - 100", "Buat beli p90", "logowarna"}};
+        ListViewAdapter adapter = new ListViewAdapter(getActivity(), items, 1);
+        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,items);
+        listHadiah.setAdapter(adapter);
+
+
         return v;
     }
 

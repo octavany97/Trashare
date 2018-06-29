@@ -63,6 +63,11 @@ public class ListViewAdapter extends BaseAdapter {
             else if(code == 2){
                 v = vi.inflate(R.layout.custom_listview2, parent, false);
             }
+            // code == 3 untuk histori poin member
+            else if(code == 3){
+                v = vi.inflate(R.layout.custom_listview_transaksi, parent, false);
+
+            }
 
         }
 
@@ -81,7 +86,7 @@ public class ListViewAdapter extends BaseAdapter {
                 text1.setText(data[position][0]);
                 text2.setText(data[position][1]);
             }
-            else if(code == 2){
+            else if(code == 2 || code == 3){
                 imgView = (ImageView) v.findViewById(R.id.imgView);
                 text1 = (TextView) v.findViewById(R.id.text1);
                 text2 = (TextView) v.findViewById(R.id.text2);

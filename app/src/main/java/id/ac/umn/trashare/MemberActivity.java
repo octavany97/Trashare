@@ -108,7 +108,9 @@ public class MemberActivity extends AppCompatActivity implements NavigationView.
                 fragment.setArguments(bundle);
                 break;
             case R.id.nav_redeem:
-                fragment = new PointFragment();
+                Intent ii = new Intent(this, PoinMemberActivity.class);
+                startActivity(ii);
+                finish();
                 break;
             case R.id.nav_tabungan:
                 fragment = new TabunganSayaFragment();

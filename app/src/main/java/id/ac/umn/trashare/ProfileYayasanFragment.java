@@ -15,7 +15,7 @@ public class ProfileYayasanFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState){
         View v = inflater.inflate(R.layout.fragment_menu_profile_yayasan, container, false);
 
-        Button btnUbahPass = (Button) v.findViewById(R.id.change_pass_btn);
+        Button btnUbahPass = (Button) v.findViewById(R.id.ubahpass_btn);
         btnUbahPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
