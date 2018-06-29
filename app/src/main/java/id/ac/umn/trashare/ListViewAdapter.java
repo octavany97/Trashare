@@ -14,15 +14,23 @@ import android.widget.TextView;
  */
 
 public class ListViewAdapter extends BaseAdapter {
-    TextView text1, text2;
+    TextView text1, text2, text3;
     ImageView imgView;
     String[][] data;
     Activity activity;
+    int code;
 
     public ListViewAdapter(Activity activity, String[][] data){
         super();
         this.data = data;
         this.activity = activity;
+        this.code = 1;
+    }
+    public ListViewAdapter(Activity activity, String[][] data, int code){
+        super();
+        this.data = data;
+        this.activity = activity;
+        this.code = code;
     }
 
     @Override
@@ -47,22 +55,46 @@ public class ListViewAdapter extends BaseAdapter {
         if(v == null){
             LayoutInflater vi;
             vi = LayoutInflater.from(activity);
-            v = vi.inflate(R.layout.custom_listview, parent, false);
+            // code == 1 untuk beranda, list bank sampah, notifikasi
+            if(code == 1){
+                v = vi.inflate(R.layout.custom_listview, parent, false);
+            }
+            // code == 2 untuk hadiah
+            else if(code == 2){
+                v = vi.inflate(R.layout.custom_listview2, parent, false);
+            }
+
         }
 
         Object p = getItem(position);
 
         if(p != null){
-            imgView = (ImageView) v.findViewById(R.id.imgView);
-            text1 = (TextView) v.findViewById(R.id.text1);
-            text2 = (TextView) v.findViewById(R.id.text2);
+            if(code == 1){
+                imgView = (ImageView) v.findViewById(R.id.imgView);
+                text1 = (TextView) v.findViewById(R.id.text1);
+                text2 = (TextView) v.findViewById(R.id.text2);
 
-            int id = activity.getResources().getIdentifier(data[position][2], "drawable", activity.getPackageName());
-            Drawable drawable = activity.getResources().getDrawable(id);
+                int id = activity.getResources().getIdentifier(data[position][2], "drawable", activity.getPackageName());
+                Drawable drawable = activity.getResources().getDrawable(id);
 
-            imgView.setImageDrawable(drawable);
-            text1.setText(data[position][0]);
-            text2.setText(data[position][1]);
+                imgView.setImageDrawable(drawable);
+                text1.setText(data[position][0]);
+                text2.setText(data[position][1]);
+            }
+            else if(code == 2){
+                imgView = (ImageView) v.findViewById(R.id.imgView);
+                text1 = (TextView) v.findViewById(R.id.text1);
+                text2 = (TextView) v.findViewById(R.id.text2);
+                text3 = (TextView) v.findViewById(R.id.text3);
+
+                int id = activity.getResources().getIdentifier(data[position][3], "drawable", activity.getPackageName());
+                Drawable drawable = activity.getResources().getDrawable(id);
+
+                imgView.setImageDrawable(drawable);
+                text1.setText(data[position][0]);
+                text2.setText(data[position][1]);
+                text3.setText(data[position][2]);
+            }
         }
 
         return v;

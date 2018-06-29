@@ -14,8 +14,28 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Judul"
+            android:textSize="@dimen/size_32_dp"
             android:textAlignment="center"
             android:layout_weight="1"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/txtTanggal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tanggal"
+            android:textSize="@dimen/size_12_dp"
+            android:textColor="@color/md_blue_grey_500"
+            android:layout_weight="1"/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:id="@+id/img_kegiatan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/calender"
+            />
     </TableRow>
     <TableRow
         android:paddingTop="16dp">

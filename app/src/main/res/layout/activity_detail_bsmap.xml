@@ -37,7 +37,23 @@
             android:paddingLeft="@dimen/size_32_dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nama : "
+            android:text="Nama      : "
+            android:layout_weight="0"/>
+        <TextView
+            android:paddingRight="@dimen/size_32_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/nama_banksampah"
+            android:layout_weight="1"/>
+    </TableRow>
+    <TableRow
+        android:paddingTop="@dimen/size_16_dp">
+        <TextView
+            android:paddingLeft="@dimen/size_32_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi    : "
             android:layout_weight="0"/>
         <TextView
             android:paddingRight="@dimen/size_32_dp"
@@ -45,6 +61,22 @@
             android:layout_height="wrap_content"
             android:text=""
             android:id="@+id/nama_lokasi"
+            android:layout_weight="1"/>
+    </TableRow>
+    <TableRow
+        android:paddingTop="@dimen/size_16_dp">
+        <TextView
+            android:paddingLeft="@dimen/size_32_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi : "
+            android:layout_weight="0"/>
+        <TextView
+            android:paddingRight="@dimen/size_32_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/deskripsi"
             android:layout_weight="1"/>
     </TableRow>
 

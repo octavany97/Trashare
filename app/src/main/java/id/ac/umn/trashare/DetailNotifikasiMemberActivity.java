@@ -13,5 +13,7 @@ public class DetailNotifikasiMemberActivity extends AppCompatActivity {
 
         TextView txtTitle = (TextView) findViewById(R.id.txtTitle);
         txtTitle.setText(getIntent().getStringExtra("name"));
+        TextView txtTanggal = (TextView) findViewById(R.id.txtTanggal);
+        txtTanggal.setText(getIntent().getStringExtra("tanggal"));
     }
 }

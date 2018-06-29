@@ -19,6 +19,8 @@ public class DetailBSMapActivity extends FragmentActivity implements OnMapReadyC
 
     private GoogleMap mMap;
     private String name = "";
+    private String location = "";
+    private String image = "";
     private String info = "Informasi Bank Sampah ";
 
     @Override
@@ -30,16 +32,19 @@ public class DetailBSMapActivity extends FragmentActivity implements OnMapReadyC
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-
-        //====================
         name = getIntent().getStringExtra("name");
+        location = getIntent().getStringExtra("location");
+        image = getIntent().getStringExtra("image");
         info += name;
 
         TextView txtInfo = (TextView) findViewById(R.id.nama_bs);
         txtInfo.setText(info);
 
-        TextView txtNama = (TextView) findViewById(R.id.nama_lokasi);
+        TextView txtNama = (TextView) findViewById(R.id.nama_banksampah);
         txtNama.setText(name);
+
+        TextView txtLokasi = (TextView) findViewById(R.id.nama_lokasi);
+        txtLokasi.setText(location);
 
         final String access = getIntent().getStringExtra("access");
 

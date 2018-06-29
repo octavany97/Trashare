@@ -34,8 +34,10 @@ public class ListBankSampahFragment extends Fragment {
 
 
         ListView listView =(ListView) v.findViewById(R.id.bs_list);
-        final String[] items = new String[] {"Bukit Pamulang Indah", "Villa Pamulang", "Al Falaah III","Puri Bintaro Hijau","Villa Inti Persada","Taman PAUD Cahaya Agung","RS Griya Pipit VI","Perigi Baru I","Japos Graha Lestari","Perigi Baru II"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,items);
+
+        final String[][] items = new String[][] {{"Bukit Pamulang Indah", "Pamulang", "logoputih"}, {"Villa Pamulang", "Pamulang", "logowarna"}, {"Al Falaah III", "Al Falaah", "logowarna2"},{"Puri Bintaro Hijau", "Bintaro", "logoputih"},{"Villa Inti Persada","Persada","logowarna"},
+                {"Taman PAUD Cahaya Agung","Cahaya Agung", "logowarna2"},{"RS Griya Pipit VI","Pipit","logoputih"},{"Perigi Baru I","Perigi Baru", "logowarna"},{"Japos Graha Lestari","Graha Lestari","logowarna2"},{"Perigi Baru II","Perigi Baru","logoputih"}};
+        ListViewAdapter adapter = new ListViewAdapter(getActivity(), items);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -43,7 +45,9 @@ public class ListBankSampahFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), DetailBSMapActivity.class);
                 //System.out.println(items[i].toString());
                 intent.putExtra("access", access);
-                intent.putExtra("name", items[i].toString());
+                intent.putExtra("name", items[i][0]);
+                intent.putExtra("location", items[i][1]);
+                intent.putExtra("image", items[i][2]);
                 startActivity(intent);
                 // Toast.makeText(getActivity().getApplicationContext(),items[i], Toast.LENGTH_SHORT).show();
             }
