@@ -25,8 +25,8 @@ public class PengaturanHadiahFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_menu_pengaturan_hadiah, container, false);
 
         ListView listPrize =(ListView) v.findViewById(R.id.listHadiah);
-        final String[][] items = new String[][] {{"Pulsa 10.000", "Kategori 1", "500", "logowarna"}, {"Voucher Indomaret 20.000","Kategori 2","800", "logowarna2"}, {"Voucher Alfamart 20.000", "Kategori 2", "800", "logowarna2"}};
-        ListViewAdapter adapter = new ListViewAdapter(getActivity(), items, 2);
+        final String[][] items = new String[][] {{"Pulsa 10.000",  "500", "logowarna"}, {"Voucher Indomaret 20.000","800", "logowarna2"}, {"Voucher Alfamart 20.000", "800", "logowarna"}};
+        ListViewAdapter adapter = new ListViewAdapter(getActivity(), items, 1);
         listPrize.setAdapter(adapter);
 
         listPrize.setOnItemClickListener(new AdapterView.OnItemClickListener() {

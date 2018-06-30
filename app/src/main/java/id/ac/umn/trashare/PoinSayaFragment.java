@@ -1,5 +1,6 @@
 package id.ac.umn.trashare;
 
+import android.support.design.widget.TabItem;
 import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.support.annotation.Nullable;
@@ -11,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class PoinSayaFragment extends Fragment{
 
@@ -26,6 +28,14 @@ public class PoinSayaFragment extends Fragment{
         ListViewAdapter adapter = new ListViewAdapter(getActivity(), items, 2);
         //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,items);
         listHadiah.setAdapter(adapter);
+
+        listHadiah.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                TextView haha = (TextView) listHadiah.findViewById(R.id.text1);
+                System.out.println(haha.getText());
+            }
+        });
 
 
         return v;
