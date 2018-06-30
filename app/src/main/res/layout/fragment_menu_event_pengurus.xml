@@ -4,15 +4,14 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <TableRow>
-        <TableRow>
+    <TableRow
+        android:layout_weight="0.2">
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Cari Kegiatan"
                 android:textSize="@dimen/size_12_dp"
                 android:textColor="@android:color/black"
-                android:fontFamily="serif-monospace"
                 android:textStyle="bold"
                 android:layout_weight="1"/>
             <EditText
@@ -20,27 +19,27 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/editSearchEvent"
                 android:inputType="text"
-                android:fontFamily="serif-monospace"
                 android:background="@drawable/et_bg_black"
                 android:padding="@dimen/padding_edit_text"
                 android:layout_weight="1"/>
-        </TableRow>
 
     </TableRow>
-    <TableRow>
+    <TableRow
+        android:layout_weight="1.6">
         <ListView
             android:id="@+id/listEvent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </TableRow>
-    <TableRow>
+    <TableRow
+        android:layout_weight="0.2">
         <Button
             android:id="@+id/btnAdd"
             android:layout_height="wrap_content"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:text="Tambah"
-            android:fontFamily="serif-monospace"
+            android:background="@drawable/green_button"
             android:textStyle="bold"
             android:textSize="@dimen/size_12_dp"
             android:textColor="@android:color/black"/>

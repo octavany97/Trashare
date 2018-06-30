@@ -15,7 +15,6 @@
         android:textSize="@dimen/size_16_dp"
         android:textColor="@android:color/black"
         android:textStyle="bold"
-        android:fontFamily="serif-monospace"
         android:text="PILIH SAMPAH"/>
 
     <Spinner
@@ -37,7 +36,6 @@
         android:inputType="numberDecimal"
         android:textSize="@dimen/size_12_dp"
         android:textColor="@android:color/black"
-        android:fontFamily="serif-monospace"
         android:hint="@string/berat_sampah_hint"/>
 
 

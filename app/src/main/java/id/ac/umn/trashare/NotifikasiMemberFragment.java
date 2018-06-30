@@ -24,17 +24,18 @@ public class NotifikasiMemberFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_menu_notifikasi_member, container, false);
 
         ListView listView =(ListView) v.findViewById(R.id.listNotif);
-        final String[] items = new String[] {"Jadwal Penimbangan Jumat, 11 Mei 2018", "Jadwal Penimbangan Jumat, 4 Mei 2018","Jalan Sehat Bank Sampah"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,items);
-        listView.setAdapter(adapter);
+        final String[][] myDataset = new String[][] {{"Jadwal Penimbangan Jumat", "11 Mei 2018", "emails"}, {"Jadwal Penimbangan Jumat","emailsopen", "4 Mei 2018"},{"Jalan Sehat Bank Sampah","1 Mei 2018","emailsopen"}};
+        ListViewAdapter mAdapter = new ListViewAdapter(getActivity(), myDataset);
+        listView.setAdapter(mAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(), DetailNotifikasiMemberActivity.class);
                 //System.out.println(items[i].toString());
-                intent.putExtra("name", items[i].toString());
+                intent.putExtra("name", myDataset[i][0].toString());
+                intent.putExtra("tanggal", myDataset[i][1].toString());
+                //intent.putExtra("icon", myDataset[i][2].toString());
                 startActivity(intent);
-                // Toast.makeText(getActivity().getApplicationContext(),items[i], Toast.LENGTH_SHORT).show();
             }
         });
         return v;

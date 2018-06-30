@@ -17,7 +17,6 @@
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/size_12_dp"
                 android:textStyle="bold"
-                android:fontFamily="serif-monospace"
                 android:layout_weight="1"/>
 
             <AutoCompleteTextView
@@ -27,7 +26,6 @@
                 android:textSize="@dimen/size_12_dp"
                 android:background="@drawable/et_bg_black"
                 android:padding="@dimen/padding_edit_text"
-                android:fontFamily="serif-monospace"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -39,7 +37,6 @@
                 android:textSize="@dimen/size_12_dp"
                 android:textStyle="bold"
                 android:textColor="@android:color/black"
-                android:fontFamily="serif-monospace"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
         </TableRow>
@@ -62,7 +59,6 @@
                 android:layout_weight="1"
                 android:alpha="0.5"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:fontFamily="serif-monospace"
                 android:textStyle="bold"
                 android:textSize="@dimen/size_12_dp"
                 android:foreground="@color/transparent"
@@ -76,16 +72,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/btn_bg_black"
-                android:fontFamily="serif-monospace"
+                android:background="@drawable/green_button"
                 android:textStyle="bold"
                 android:textSize="@dimen/size_12_dp"
                 android:foreground="?attr/selectableItemBackground"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:text="input sampah" />
         </TableRow>
-
     </TableLayout>
-
-
 </LinearLayout>

@@ -13,7 +13,6 @@
                 android:textStyle="bold"
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/size_12_dp"
-                android:fontFamily="serif-monospace"
                 android:layout_weight="1"/>
             <EditText
                 android:layout_width="0dp"
@@ -22,7 +21,6 @@
                 android:inputType="text"
                 android:background="@drawable/et_bg_black"
                 android:padding="@dimen/padding_edit_text"
-                android:fontFamily="serif-monospace"
                 android:textSize="@dimen/size_12_dp"
                 android:textColor="@android:color/black"
                 android:layout_weight="1"/>
