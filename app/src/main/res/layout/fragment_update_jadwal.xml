@@ -3,36 +3,43 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="@dimen/size_16_dp">
 
     <CalendarView
         android:id="@+id/calenderview"
         android:layout_width="350dp"
         android:layout_height="350dp"
+        android:clickable="true"
         android:background="@drawable/calender"
         android:layout_gravity="center"/>
 
-
     <TextView
-        android:textSize="25sp"
+        android:textSize="@dimen/size_12_dp"
         android:id="@+id/date"
         android:layout_gravity="center_horizontal"
         android:hint="Tanggal Pilihan"
+        android:textAlignment="center"
+        android:textColor="@color/md_black_1000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    
+
     <EditText
-        android:textSize="25sp"
+        android:textSize="@dimen/size_12_dp"
         android:id="@+id/nama_kegiatan"
         android:layout_gravity="center_horizontal"
         android:hint="Tema Kegiatan"
-        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:background="@drawable/et_bg_black"
+        android:textColor="@color/md_black_1000"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
         android:layout_gravity="center_horizontal"
         android:text="Update"
-        android:background="@drawable/btn_bg_black"
+        android:background="@drawable/green_button"
+        android:textColor="@color/colorWhite"
         android:layout_margin="@dimen/size_12_dp"
         android:id="@+id/btn_update_tanggal"
         android:layout_width="match_parent"
