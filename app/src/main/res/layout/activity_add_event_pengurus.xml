@@ -139,7 +139,7 @@
         <Button
             android:id="@+id/btnAdd"
             android:fontFamily="serif-monospace"
-            android:background="@drawable/btn_bg_black"
+            android:background="@drawable/green_button"
             android:text="Tambah"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"

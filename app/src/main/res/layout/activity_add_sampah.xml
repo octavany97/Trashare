@@ -88,7 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:textSize="@dimen/size_12_dp"
-            android:background="@drawable/btn_bg_black"
+            android:background="@drawable/green_button"
             android:layout_weight="1"
             />
     </TableRow>

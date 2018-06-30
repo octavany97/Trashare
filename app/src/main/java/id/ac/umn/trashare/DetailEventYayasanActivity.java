@@ -17,10 +17,10 @@ public class DetailEventYayasanActivity extends AppCompatActivity {
         txtTitle.setText(getIntent().getStringExtra("name"));
 
         TextView txtPenyelenggara = (TextView) findViewById(R.id.txtPenyelenggara);
-        txtPenyelenggara.setText("Bank Sampah UMN");
+        txtPenyelenggara.setText(getIntent().getStringExtra("penyelenggara"));
 
         TextView txtDesc = (TextView) findViewById(R.id.txtDescription);
-        txtDesc.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.");
+        txtDesc.setText(getIntent().getStringExtra("deskripsi"));
 
         Button btnSaran = (Button) findViewById(R.id.btnSaran);
         btnSaran.setOnClickListener(new View.OnClickListener() {

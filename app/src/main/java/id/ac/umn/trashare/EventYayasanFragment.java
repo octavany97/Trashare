@@ -34,8 +34,8 @@ public class EventYayasanFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_menu_event_yayasan, container, false);
 
         ListView listEvent =(ListView) v.findViewById(R.id.listEvent);
-        final String[] items = new String[] {"Jalan Sehat Bank Sampah", "Kreasi Bank Sampah", "Senam Bersama Bank Sampah"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,items);
+        final String[][] items = new String[][] {{"Jalan Sehat Bank Sampah", "Bank Sampah Melati"}, {"Kreasi Bank Sampah", "Bank Sampah Pamulang"}, {"Senam Bersama Bank Sampah", "Yayasan Bank Sampah Melati Bersih"}};
+        ListViewAdapter adapter = new ListViewAdapter(getActivity(), items, 4);
 
 
         listEvent.setAdapter(adapter);
@@ -44,9 +44,10 @@ public class EventYayasanFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(), DetailEventYayasanActivity.class);
                 //System.out.println(items[i].toString());
-                intent.putExtra("name", items[i].toString());
+                intent.putExtra("name", items[i][0].toString());
+                intent.putExtra("penyelenggara", items[i][1].toString());
+                intent.putExtra("deskripsi", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.");
                 startActivity(intent);
-                // Toast.makeText(getActivity().getApplicationContext(),items[i], Toast.LENGTH_SHORT).show();
             }
         });
         return v;

@@ -84,7 +84,7 @@
             android:textSize="@dimen/size_12_dp"
             android:text="Tambah"
             android:textStyle="bold"
-            android:background="@drawable/btn_bg_black"
+            android:background="@drawable/green_button"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
