@@ -22,8 +22,8 @@ public class PoinSayaFragment extends Fragment{
         v = inflater.inflate(R.layout.fragment_poin_saya,container,false);
 
         listHadiah =(ListView) v.findViewById(R.id.listHadiah);
-        final String[][] items = new String[][] {{"Vocer Steam - 500", "Dapet saldo steam 5$", "logoputih"}, {"Pocer Pebeh - 100", "Buat beli p90", "logowarna"}};
-        ListViewAdapter adapter = new ListViewAdapter(getActivity(), items, 1);
+        final String[][] items = new String[][] {{"Vocer Steam - 500", "500 Poin", "logoputih"}, {"Pocer Pebeh - 100", "100 Poin", "logowarna"}};
+        ListViewAdapter adapter = new ListViewAdapter(getActivity(), items, 2);
         //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,items);
         listHadiah.setAdapter(adapter);
 

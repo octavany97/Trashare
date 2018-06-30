@@ -74,7 +74,7 @@ public class ListViewAdapter extends BaseAdapter {
         Object p = getItem(position);
 
         if(p != null){
-            if(code == 1){
+            if(code == 1 || code == 2){
                 imgView = (ImageView) v.findViewById(R.id.imgView);
                 text1 = (TextView) v.findViewById(R.id.text1);
                 text2 = (TextView) v.findViewById(R.id.text2);
@@ -86,7 +86,7 @@ public class ListViewAdapter extends BaseAdapter {
                 text1.setText(data[position][0]);
                 text2.setText(data[position][1]);
             }
-            else if(code == 2 || code == 3){
+            else if(code == 3){
                 imgView = (ImageView) v.findViewById(R.id.imgView);
                 text1 = (TextView) v.findViewById(R.id.text1);
                 text2 = (TextView) v.findViewById(R.id.text2);
