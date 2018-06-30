@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:gravity="center"
-    android:background="@drawable/bg"
     tools:context="id.ac.umn.trashare.AddEventPengurusActivity">
 
     <TableRow
@@ -15,7 +14,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="serif-monospace"
             android:textColor="@android:color/black"
             android:textStyle="bold"
             android:textSize="@dimen/size_12_dp"
@@ -42,7 +40,6 @@
             android:layout_weight="1"
             android:textSize="@dimen/size_12_dp"
             android:textStyle="bold"
-            android:fontFamily="serif-monospace"
             android:textColor="@android:color/black"
             android:text="Deskripsi" />
 
@@ -66,7 +63,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="@dimen/size_12_dp"
-            android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:textColor="@android:color/black"
             android:text="Tempat" />
@@ -91,7 +87,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="@dimen/size_12_dp"
-            android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:textColor="@android:color/black"
             android:text="Tanggal" />
@@ -117,7 +112,6 @@
             android:layout_weight="1"
             android:textSize="@dimen/size_12_dp"
             android:textStyle="bold"
-            android:fontFamily="serif-monospace"
             android:textColor="@android:color/black"
             android:text="Jam" />
 

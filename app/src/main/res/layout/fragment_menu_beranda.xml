@@ -5,7 +5,6 @@
     android:layout_height="wrap_content"
     android:padding="16dp"
     android:weightSum="10"
-    android:background="@drawable/bg"
     android:orientation="vertical">
 
     <RelativeLayout

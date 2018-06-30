@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@drawable/bg"
     android:padding="@dimen/size_20_dp">
 
 
@@ -28,22 +27,27 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="315dp"
+        android:layout_height="363dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+<<<<<<< Updated upstream
         android:layout_marginTop="89dp"
+=======
+        android:layout_marginTop="54dp"
+>>>>>>> Stashed changes
         android:fadeScrollbars="false"
         android:paddingBottom="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/panduan" />
+                android:layout_height="match_parent"
+                android:text="@string/panduan"
+                android:textSize="@dimen/size_14_dp" />
         </LinearLayout>
     </ScrollView>
 

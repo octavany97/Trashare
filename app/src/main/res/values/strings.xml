@@ -8,12 +8,62 @@
 
     <string name="judul">PANDUAN PENDIRIAN BANK SAMPAH</string>
     <string name="judulpanduan">PANCASILA</string>
-    <string name="panduan"> \n
-        1. Ketuhanan Yang Maha Esa\n
-        2. Kemanusiaan yang adil dan beradab\n
-        3. Persatuan Indonesia\n
-        4. Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan\n
-        5. Keadilan sosial bagi seluruh bangsa Indonesia
+    <string name="panduan">Pendahuluan
+        Sampah merupakan konsekuensi dari adanya aktifitas manusia.
+        Setiap aktifitas manusia pasti menghasilkan buangan atau sampah.
+        Jumlah atau volume sampah sebanding dengan tingkat konsumsi kita
+        Terhadap barang/material yang kita gunakan sehari-hari,
+        demikian juga dengan jenis dan karakteristik sampah yang semakin beragam
+        pengelolaan sampah yang selama ini dilakukan belum sesuai dengan metode dan teknik pengelolaan
+        sampah yang berwawasan lingkungan sehingga menimbulkan dampak negatif terhadap kesehatan masyarakat dan lingkungan.
+        \n \nUndang-undang nomor 18 tahun 2008 tentang "pengelolaan sampah", pasal 12 ayat (1) menyebutkan bahwa "setiap orang dalam pengelolaan sampah rumah tangga adan sampah sejenis sampah rumah tangga wajib mengurangi dan menangani sampah dengan cara yang berwawasan lingkungan". Dengan demikian setiap
+        rumah tangga sebagai penghasil sampah tidak bisa lagi mengabaikan urusan sampah dan pengelolaan sampah tidak lagi sepenuhnya menjadi tanggung jawab pemerintah saja.
+        pelaksaan bank sampah dan gerakan 3r (reduce, reuse, dan recycle atau batasi sampah, guna ulang sampah dan daur ulang sampah adalah segala aktivitas yang mampu
+        mengurangi segala sesuatu yang dapat menimbulkan sampah, kegiatan penggunaan kembali sampah yang layak pakai untuk fungsi yang sama atau fungsi yang lain,
+        dan kegiatan mengolah sampah untuk dijadikan produk baru) adalah langkah nyata membumikan perubahan paradigma pengelolaan sampah.
+        \n\nTujuan :
+        \n\t1. Mengubah perilaku masyarakat
+        \n\t2. Mengurangi jumlah sampah yang dikirim ke tpa
+        \n\t3. Menciptakan lingkungan sehat, bersih, hijau dan asri
+        \n\t4. Mengedukasi masyarakat peduli lingkungan dan berorganisasi
+        \n\t5. Menumbuhkan kreatifitas
+        \n\t6. Mensosialisasikan kembali manfaat menabung
+        \n\t7. Meningkatkan nilai silaturahmi antar warga masyarakat
+        \n\t8. Menumbuhkan kesadaran masyarakat akan pentingnya kejujuran
+        \n\t9. Menumbuhkan kesadaran masyarakat akan pentingnya kedisplinan (budaya antri)
+        \n
+        \nMekanisme bank sampah :
+        \n\t1. Pemilahan sampah
+        \n\t2. Sampah terpilah di setorkan ke bank sampah
+        \n\t3. Sampah di timbang
+        \n\t4. Pencatatan
+        \n\t5. Nasabah diberikan buku tabungan
+        \n\t6. Sampah tertimbang dibawa oleh pembeli/lapak
+        \n
+        \nKepengurusan
+        \nPengurus bank sampah berstatus relawan murni/tidak mendapat honor atau bayaran apa pun.
+        \n\tSusunan Pengurus :
+        \n\t1. Pelindung/pembina (ketua rt/rw)
+        \n\t2. Ketua
+        \n\t3. Sekretaris
+        \n\t4. Bendahara
+        \n\t5. Sie penimbangan
+        \n\t6. Sie pencatat buku tabungan
+        \n\t7. Sie humas
+        \n
+        \nTahapan operasional bank sampah
+        \n1. Menentukan hari/waktu dan lokasi penimbangan (ditetapkan oleh ketua)
+        \n2. Melakukan sosialisasi kepada warga masyarakat melalui kegiatan pkk, pengajian, posyandu atau arisan/pertemuan RW maupun RT.
+        \n3. Menghubungi lapak/pembeli sampah, menginformasikan kegiatan penimbangan yang akan dilakukan.
+        \n4. Setelah tiba hari dan waktu penimbangan, pengurus bank sampah, calon nasabah dan petugas lapak datang di tempat yang sudah ditentukan. Setelah melakukan penimbangan calon nasabah mengisi formulir pendaftaran untuk ditulis di buku tabungan. Agar tertib, proses penimbangan diatur menggunakan nomor antrian.
+        \n5. Petugas lapak melaksanakan penimbangan disaksikan oleh pengurus bank sampah serta nasabah. Jenis sampah ditentukan oleh petugas lapak.
+        \n6. Setelah di timbang dan di catat oleh petugas sie penimbangan, catatan hasil penimbangan diserahkan ke petugas sie pencatat buku tabungan. Jumlah berat sampah sesuai jenis dikonversikan ke nilai rupiah mengacu kepada pedoman harga yang ada, yang kemudian dicatat ke dalam buku tabungan nasabah
+        \n7. Buku tabungan diserahkan kembali kepada nasabah
+        \n8. Sekretaris mencatat jumlah total penimbangan dan membuat rekapitulasi penimgban sebagai dasar penagihan kepada lapak
+        \n
+        \nHarap dibaca dan dimengerti untuk calon pengurus BANK SAMPAH yang bersangkutan.
+
+
     </string>
 
     <string-array name="tipe_pengguna">
