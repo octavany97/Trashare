@@ -28,6 +28,14 @@ public class ProfileMemberFragment extends Fragment{
             }
         });
 
+        Button btnEditProfile = (Button) v.findViewById(R.id.setting_btn);
+        btnEditProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), EditProfileActivity.class);
+                startActivity(i);
+            }
+        });
         return v;
     }
 

@@ -57,11 +57,12 @@
 
         <activity
             android:name=".DetailBSMapActivity"
-            android:label="@string/title_activity_detail_bsmap"></activity>
+            android:label="@string/title_activity_detail_bsmap" />
         <activity
             android:name=".PoinMemberActivity"
             android:label="@string/title_activity_poin_member"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".EditProfileActivity"></activity>
     </application>
 
 </manifest>

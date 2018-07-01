@@ -21,7 +21,8 @@
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/size_10_dp">
 
-                <TableRow>
+                <TableRow
+                    android:paddingBottom="@dimen/size_10_dp">
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -29,21 +30,24 @@
                         android:layout_weight="1"
                         android:text="ID"
                         android:textColor="#000"
-                        android:textSize="15sp"
+                        android:textSize="15dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
+                        android:id="@+id/id_user"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:text="#313421"
                         android:textColor="#000"
-                        android:textSize="15sp"
+                        android:background="@drawable/et_bg_black"
+                        android:padding="5dp"
+                        android:textSize="15dp"
                         android:textStyle="bold" />
                 </TableRow>
 
-                <TableRow>
+                <TableRow
+                    android:paddingBottom="@dimen/size_10_dp">
 
                     <TextView
                         android:layout_width="0dp"
@@ -52,44 +56,50 @@
                         android:layout_weight="1"
                         android:text="Nama"
                         android:textColor="#000"
-                        android:textSize="15sp"
+                        android:textSize="15dp"
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/nama_user"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:text="Trashare"
+                        android:background="@drawable/et_bg_black"
                         android:textColor="#000"
-                        android:textSize="15sp"
+                        android:textSize="15dp"
+                        android:padding="5dp"
                         android:textStyle="bold" />
                 </TableRow>
 
-                <TableRow>
+                <TableRow
+                    android:paddingBottom="@dimen/size_10_dp">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:text="Nama BS"
+                        android:text="Nama Bank Sampah"
                         android:textColor="#000"
-                        android:textSize="15sp"
+                        android:textSize="15dp"
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/nama_bs"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:text="Melati"
+                        android:background="@drawable/et_bg_black"
                         android:textColor="#000"
-                        android:textSize="15sp"
+                        android:textSize="15dp"
+                        android:padding="5dp"
                         android:textStyle="bold" />
                 </TableRow>
 
-                <TableRow>
+                <TableRow
+                    android:paddingBottom="@dimen/size_30_dp">
 
                     <TextView
                         android:layout_width="0dp"
@@ -102,13 +112,15 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/email_user"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:text="trashare@gmail.com"
+                        android:background="@drawable/et_bg_black"
                         android:textColor="#000"
-                        android:textSize="15sp"
+                        android:textSize="15dp"
+                        android:padding="5dp"
                         android:textStyle="bold" />
                 </TableRow>
             <TableRow>
