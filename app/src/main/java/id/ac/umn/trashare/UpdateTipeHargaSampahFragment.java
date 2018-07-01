@@ -29,6 +29,8 @@ import org.w3c.dom.Text;
 
 public class UpdateTipeHargaSampahFragment extends Fragment {
 
+    ListView listSampah;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -36,7 +38,13 @@ public class UpdateTipeHargaSampahFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_menu_update_tipe_harga_sampah, container, false);
 
-        TableLayout tblTipeHargaSampah = (TableLayout) v.findViewById(R.id.tipe_harga_sampah_table);
+        listSampah =(ListView) v.findViewById(R.id.listSampah);
+        final String[][] items = new String[][] {{"Kardus", "Nasabah : 2000", "Lapak : 2500"}, {"Kaleng", "Nasabah : 3000", "Lapak : 3500"}};
+        ListViewAdapter adapter = new ListViewAdapter(getActivity(), items, 4);
+        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,items);
+        listSampah.setAdapter(adapter);
+
+        /*TableLayout tblTipeHargaSampah = (TableLayout) v.findViewById(R.id.tipe_harga_sampah_table);
 
         TableRow tr_head = new TableRow(this.getActivity());
         tr_head.setBackgroundColor(Color.GRAY);
@@ -148,8 +156,8 @@ public class UpdateTipeHargaSampahFragment extends Fragment {
 
 
         }
-
-        TableRow tr2 = new TableRow(this.getActivity());
+*/
+        /*TableRow tr2 = new TableRow(this.getActivity());
 
         Button addButton = new Button(this.getActivity());
         addButton.setLayoutParams(new TableRow.LayoutParams(
@@ -167,7 +175,7 @@ public class UpdateTipeHargaSampahFragment extends Fragment {
                 Intent i = new Intent(getActivity(), AddSampahActivity.class);
                 startActivity(i);
             }
-        });
+        });*/
 
 
         return v;
@@ -177,7 +185,6 @@ public class UpdateTipeHargaSampahFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle("Jenis Sampah");
     }
 
     @Override

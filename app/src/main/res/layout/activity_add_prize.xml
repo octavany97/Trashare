@@ -18,6 +18,7 @@
             android:text="Nama"
             android:layout_weight="1"/>
         <EditText
+            android:padding="5dp"
             android:layout_width="0dp"
             android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
@@ -35,6 +36,7 @@
             android:text="Deskripsi"
             android:layout_weight="1"/>
         <EditText
+            android:padding="5dp"
             android:layout_width="0dp"
             android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
@@ -52,6 +54,7 @@
             android:textStyle="bold"
             android:layout_weight="1"/>
         <EditText
+            android:padding="5dp"
             android:layout_width="0dp"
             android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"
@@ -69,6 +72,7 @@
             android:textStyle="bold"
             android:layout_weight="1"/>
         <EditText
+            android:padding="5dp"
             android:layout_width="0dp"
             android:textSize="@dimen/size_12_dp"
             android:layout_height="wrap_content"

@@ -33,6 +33,8 @@ public class ListViewAdapter extends BaseAdapter {
         this.code = code;
     }
 
+
+
     @Override
     public int getCount() {
         return data.length;
@@ -70,12 +72,18 @@ public class ListViewAdapter extends BaseAdapter {
             else if(code == 4){
                 v = vi.inflate(R.layout.custom_listview_kegiatan, parent, false);
             }
+            else if(code == 5){
+                v = vi.inflate(R.layout.custom_listview_jenis_sampah, parent, false);
+            }
+            else if(code == 6){
+                v = vi.inflate(R.layout.custom_listview_hadiah, parent, false);
+            }
         }
 
         Object p = getItem(position);
 
         if(p != null){
-            if(code == 1 || code == 2){
+            if(code == 1 || code == 2 || code == 6){
                 imgView = (ImageView) v.findViewById(R.id.imgView);
                 text1 = (TextView) v.findViewById(R.id.text1);
                 text2 = (TextView) v.findViewById(R.id.text2);
@@ -107,6 +115,15 @@ public class ListViewAdapter extends BaseAdapter {
 
                 text1.setText(data[position][0]);
                 text2.setText(data[position][1]);
+            }
+            else if(code == 5){
+                text1 = (TextView) v.findViewById(R.id.txtSampah);
+                text2 = (TextView) v.findViewById(R.id.txtNasabah);
+                text3 = (TextView) v.findViewById(R.id.txtLapak);
+
+                text1.setText(data[position][0]);
+                text2.setText(data[position][1]);
+                text3.setText(data[position][2]);
             }
         }
 

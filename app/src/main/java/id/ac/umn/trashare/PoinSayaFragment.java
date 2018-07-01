@@ -6,11 +6,13 @@ import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -29,13 +31,17 @@ public class PoinSayaFragment extends Fragment{
         //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,items);
         listHadiah.setAdapter(adapter);
 
+
         listHadiah.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                TextView haha = (TextView) listHadiah.findViewById(R.id.text1);
-                System.out.println(haha.getText());
+                TextView textView = (TextView) view.findViewById(R.id.text1);
+                System.out.println(textView.getText().toString());
+                System.out.println("HAHA");
             }
+
         });
+
 
 
         return v;
