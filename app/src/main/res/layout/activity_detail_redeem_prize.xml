@@ -67,6 +67,8 @@
     <TableRow
         android:paddingTop="8dp">
         <Button
+            android:textColor="@color/md_white_1000"
+            android:background="@drawable/green_button"
             android:id="@+id/btnRedeem"
             android:text="Tukar"
             android:layout_weight="1"

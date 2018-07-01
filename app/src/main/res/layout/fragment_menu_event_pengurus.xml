@@ -39,7 +39,10 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:text="Tambah"
+<<<<<<< Updated upstream
             android:background="@drawable/green_button"
+=======
+>>>>>>> Stashed changes
             android:textStyle="bold"
             android:textSize="@dimen/size_12_dp"
             android:textColor="@android:color/black"/>

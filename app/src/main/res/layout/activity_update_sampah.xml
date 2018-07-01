@@ -13,6 +13,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@color/md_black_1000"
             android:text="Jenis :" />
 
         <EditText
@@ -29,6 +30,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@color/md_black_1000"
             android:text="Harga Nasabah :" />
 
         <EditText
@@ -46,6 +48,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@color/md_black_1000"
             android:text="Harga Lapak :" />
 
         <EditText
@@ -65,13 +68,16 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_weight="1"
-            android:fontFamily="serif-monospace"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="@dimen/size_12_dp"
+            android:background="@drawable/green_button"
             android:textStyle="bold"/>
         <Button
+            android:layout_marginLeft="@dimen/size_12_dp"
             android:id="@+id/btnBack"
             android:text="Kembali"
+            android:background="@drawable/red_button"
+            android:textColor="@color/md_white_1000"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_weight="1"

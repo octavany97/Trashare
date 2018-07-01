@@ -23,7 +23,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textAlignment="center"
-            android:fontFamily="serif-monospace"
             android:paddingTop="30dp"
             android:lines="2"
             android:textStyle="bold"
@@ -149,14 +148,15 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Register"
-            android:background="@drawable/btn_bg_black"
+            android:background="@drawable/green_button"
             android:id="@+id/regis_btn"/>
         <Button
+            android:layout_marginLeft="@dimen/size_12_dp"
             android:layout_width="wrap_content"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Cancel"
-            android:background="@drawable/btn_bg_black"
+            android:background="@drawable/red_button"
             android:id="@+id/cancel_btn"/>
     </LinearLayout>
 
