@@ -16,7 +16,6 @@
             android:text="Nama"
             android:layout_weight="1"
             android:textColor="@android:color/black"
-            android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:textSize="@dimen/size_12_dp"/>
         <EditText
@@ -25,7 +24,6 @@
             android:id="@+id/editNama"
             android:layout_weight="1"
             android:textColor="@android:color/black"
-            android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:background="@drawable/et_bg_black"
             android:textSize="@dimen/size_12_dp"
@@ -40,7 +38,6 @@
             android:text="Deskripsi"
             android:layout_weight="1"
             android:textColor="@android:color/black"
-            android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:textSize="@dimen/size_12_dp"/>
         <EditText
@@ -49,7 +46,6 @@
             android:id="@+id/editDescription"
             android:layout_weight="1"
             android:textColor="@android:color/black"
-            android:fontFamily="serif-monospace"
             android:padding="@dimen/padding_edit_text"
             android:textStyle="bold"
             android:background="@drawable/et_bg_black"
@@ -64,7 +60,6 @@
             android:text="Sponsor : "
             android:layout_weight="1"
             android:textColor="@android:color/black"
-            android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:textSize="@dimen/size_12_dp"/>
         <EditText
@@ -73,7 +68,6 @@
             android:id="@+id/editSponsor"
             android:layout_weight="1"
             android:textColor="@android:color/black"
-            android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:padding="@dimen/padding_edit_text"
             android:background="@drawable/et_bg_black"
@@ -88,7 +82,6 @@
             android:text="Poin : "
             android:layout_weight="1"
             android:textColor="@android:color/black"
-            android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:textSize="@dimen/size_12_dp"/>
         <EditText
@@ -98,7 +91,6 @@
             android:layout_weight="1"
             android:inputType="number"
             android:textColor="@android:color/black"
-            android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:padding="@dimen/padding_edit_text"
             android:background="@drawable/et_bg_black"
@@ -113,10 +105,8 @@
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_bg_black"
-            android:textColor="@android:color/black"
-            android:fontFamily="serif-monospace"
-            android:textStyle="bold"
+            android:background="@drawable/green_button"
+            android:textColor="@android:color/white"
             android:layout_marginRight="@dimen/padding_edit_text"
             android:textSize="@dimen/size_12_dp"/>
 
@@ -126,10 +116,8 @@
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_bg_black"
-            android:textColor="@android:color/black"
-            android:fontFamily="serif-monospace"
-            android:textStyle="bold"
+            android:background="@drawable/green_button"
+            android:textColor="@android:color/white"
             android:layout_marginLeft="@dimen/padding_edit_text"
             android:textSize="@dimen/size_12_dp"/>
     </TableRow>
