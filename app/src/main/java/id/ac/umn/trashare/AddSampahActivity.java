@@ -19,5 +19,6 @@ public class AddSampahActivity extends AppCompatActivity {
                 finish();
             }
         });
+        this.setTitle("Tambah Sampah");
     }
 }

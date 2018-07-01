@@ -25,7 +25,6 @@ public class HistoryPoinFragment extends Fragment {
         listHistori =(ListView) v.findViewById(R.id.listHistori);
         final String[][] items = new String[][] {{"100 poin", "Tukar dengan hadiah apa aja lah", "05-05-2015", "logoputih"}, {"200 poin", "Nambah cuy poin nya", "06-06-2016", "logowarna"}};
         ListViewAdapter adapter = new ListViewAdapter(getActivity(), items, 3);
-        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,items);
         listHistori.setAdapter(adapter);
 
         return v;

@@ -24,14 +24,13 @@ public class NotifikasiMemberFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_menu_notifikasi_member, container, false);
 
         ListView listView =(ListView) v.findViewById(R.id.listNotif);
-        final String[][] myDataset = new String[][] {{"Jadwal Penimbangan Jumat", "11 Mei 2018", "emails"}, {"Jadwal Penimbangan Jumat","emailsopen", "4 Mei 2018"},{"Jalan Sehat Bank Sampah","1 Mei 2018","emailsopen"}};
+        final String[][] myDataset = new String[][] {{"Jadwal Penimbangan Jumat", "11 Mei 2018", "emails"}, {"Jadwal Penimbangan Jumat", "4 Mei 2018","emailsopen"},{"Jalan Sehat Bank Sampah","1 Mei 2018","emailsopen"}};
         ListViewAdapter mAdapter = new ListViewAdapter(getActivity(), myDataset);
         listView.setAdapter(mAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(), DetailNotifikasiMemberActivity.class);
-                //System.out.println(items[i].toString());
                 intent.putExtra("name", myDataset[i][0].toString());
                 intent.putExtra("tanggal", myDataset[i][1].toString());
                 //intent.putExtra("icon", myDataset[i][2].toString());
