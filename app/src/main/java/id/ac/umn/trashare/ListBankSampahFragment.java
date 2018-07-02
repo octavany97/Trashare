@@ -43,13 +43,11 @@ public class ListBankSampahFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(), DetailBSMapActivity.class);
-                //System.out.println(items[i].toString());
                 intent.putExtra("access", access);
                 intent.putExtra("name", items[i][0]);
                 intent.putExtra("location", items[i][1]);
                 intent.putExtra("image", items[i][2]);
                 startActivity(intent);
-                // Toast.makeText(getActivity().getApplicationContext(),items[i], Toast.LENGTH_SHORT).show();
             }
         });
         return v;
