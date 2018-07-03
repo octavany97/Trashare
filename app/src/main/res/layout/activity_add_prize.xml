@@ -12,7 +12,7 @@
         android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="0dp"
-            android:textSize="@dimen/size_12_dp"
+            android:textSize="@dimen/size_14_dp"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:text="Nama"
@@ -20,7 +20,7 @@
         <EditText
             android:padding="5dp"
             android:layout_width="0dp"
-            android:textSize="@dimen/size_12_dp"
+            android:textSize="@dimen/size_14_dp"
             android:layout_height="wrap_content"
             android:background="@drawable/et_bg_black"
             android:id="@+id/editNama"
@@ -30,7 +30,7 @@
         android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="0dp"
-            android:textSize="@dimen/size_12_dp"
+            android:textSize="@dimen/size_14_dp"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:text="Deskripsi"
@@ -38,7 +38,7 @@
         <EditText
             android:padding="5dp"
             android:layout_width="0dp"
-            android:textSize="@dimen/size_12_dp"
+            android:textSize="@dimen/size_14_dp"
             android:layout_height="wrap_content"
             android:background="@drawable/et_bg_black"
             android:id="@+id/editDescription"
@@ -48,7 +48,7 @@
         android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="0dp"
-            android:textSize="@dimen/size_12_dp"
+            android:textSize="@dimen/size_14_dp"
             android:layout_height="wrap_content"
             android:text="Sponsor"
             android:textStyle="bold"
@@ -56,7 +56,7 @@
         <EditText
             android:padding="5dp"
             android:layout_width="0dp"
-            android:textSize="@dimen/size_12_dp"
+            android:textSize="@dimen/size_14_dp"
             android:layout_height="wrap_content"
             android:background="@drawable/et_bg_black"
             android:id="@+id/editSponsor"
@@ -66,7 +66,7 @@
         android:paddingBottom="@dimen/size_10_dp">
         <TextView
             android:layout_width="0dp"
-            android:textSize="@dimen/size_12_dp"
+            android:textSize="@dimen/size_14_dp"
             android:layout_height="wrap_content"
             android:text="Poin"
             android:textStyle="bold"
@@ -74,7 +74,7 @@
         <EditText
             android:padding="5dp"
             android:layout_width="0dp"
-            android:textSize="@dimen/size_12_dp"
+            android:textSize="@dimen/size_14_dp"
             android:layout_height="wrap_content"
             android:id="@+id/editPoint"
             android:background="@drawable/et_bg_black"
@@ -84,13 +84,13 @@
     <TableRow>
         <Button
             android:id="@+id/btnAdd"
-            android:textSize="@dimen/size_12_dp"
+            android:textSize="@dimen/size_14_dp"
             android:text="Tambah"
-            android:textStyle="bold"
             android:background="@drawable/green_button"
             android:layout_weight="1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_white_1000"/>
     </TableRow>
 
 </TableLayout>

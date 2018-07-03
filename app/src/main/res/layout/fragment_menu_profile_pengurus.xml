@@ -122,12 +122,12 @@
     </LinearLayout>
     <LinearLayout
         android:paddingTop="@dimen/size_14_dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingLeft="12dp"
         android:orientation="vertical">
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="330dp"
             android:layout_height="80dp"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/image"
@@ -137,7 +137,7 @@
             android:textAlignment="center"
             android:textSize="@dimen/size_14_dp" />
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
@@ -212,28 +212,18 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:paddingTop="50dp"
+            android:gravity="center_horizontal"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/logout_btn"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/ubahpass_btn"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/red_button"
-                android:text="LOGOUT"
-                android:textStyle="bold"
-                android:textSize="@dimen/size_10_dp" />
             <Button
                 android:id="@+id/ubahpass_btn"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignTop="@+id/setting_btn"
-                android:layout_marginStart="19dp"
                 android:background="@drawable/grey_button"
                 android:text="Ubah Password"
                 android:textStyle="bold"
@@ -243,8 +233,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="19dp"
-                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="@dimen/size_12_dp"
                 android:background="@drawable/grey_button"
                 android:text="Ubah profile"
                 android:textSize="@dimen/size_10_dp"

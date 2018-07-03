@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textStyle="bold"
-                android:textSize="@dimen/size_12_dp"
+                android:textSize="@dimen/size_14_dp"
                 android:textColor="@android:color/black"
                 android:text="Penyelenggara" />
 
@@ -42,7 +42,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="@dimen/size_12_dp"
+                android:textSize="@dimen/size_14_dp"
                 android:textColor="@android:color/black" />
         </TableRow>
         <TableRow
@@ -51,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="@dimen/size_12_dp"
+                android:textSize="@dimen/size_14_dp"
                 android:textColor="@android:color/black"
                 android:text="Deskripsi"
                 android:layout_weight="1"/>
@@ -70,7 +70,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="@dimen/size_12_dp"
+                android:textSize="@dimen/size_14_dp"
                 android:textColor="@android:color/black"
                 android:text="Saran"
                 android:layout_weight="1"/>
@@ -94,7 +94,7 @@
                 android:text="Kirim"
                 android:layout_weight="1"
                 android:background="@drawable/green_button"
-                android:textSize="@dimen/size_12_dp"
+                android:textSize="@dimen/size_14_dp"
                 android:textColor="@color/md_white_1000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -105,7 +105,7 @@
                 android:text="Selesai"
                 android:layout_weight="1"
                 android:background="@drawable/green_button"
-                android:textSize="@dimen/size_12_dp"
+                android:textSize="@dimen/size_14_dp"
                 android:textColor="@color/md_white_1000"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />

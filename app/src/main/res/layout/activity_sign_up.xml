@@ -27,7 +27,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Nama"
-            android:textSize="11dp"
             android:textColor="@color/md_black_1000"
             android:textStyle="bold"
             android:layout_weight="1"/>
@@ -96,7 +95,6 @@
             android:background="@drawable/green_button"
             android:text="Daftar"
             android:textColor="@color/md_white_1000"
-            android:textStyle="bold"
             android:textSize="@dimen/size_12_dp"
             />
     </TableLayout>

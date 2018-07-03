@@ -43,7 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/panduan"
-                android:textSize="@dimen/size_14_dp" />
+                android:textSize="@dimen/size_12_dp" />
         </LinearLayout>
     </ScrollView>
 

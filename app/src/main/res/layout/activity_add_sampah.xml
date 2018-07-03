@@ -35,10 +35,9 @@
             android:paddingBottom="@dimen/size_10_dp">
             <TextView
                 android:layout_width="0dp"
-                android:fontFamily="serif-monospace"
                 android:textStyle="bold"
                 android:textColor="@android:color/black"
-                android:textSize="@dimen/size_12_dp"
+                android:textSize="@dimen/size_14_dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Jenis" />
@@ -46,7 +45,7 @@
             <EditText
                 android:id="@+id/editJenisSampah"
                 android:textColor="@android:color/black"
-                android:textSize="@dimen/size_12_dp"
+                android:textSize="@dimen/size_14_dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/padding_edit_text"
@@ -60,9 +59,8 @@
             <TextView
                 android:layout_width="0dp"
                 android:textColor="@android:color/black"
-                android:fontFamily="serif-monospace"
                 android:textStyle="bold"
-                android:textSize="@dimen/size_12_dp"
+                android:textSize="@dimen/size_14_dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Harga Nasabah" />
@@ -71,7 +69,7 @@
                 android:id="@+id/editHargaNasabah"
                 android:layout_width="0dp"
                 android:textColor="@android:color/black"
-                android:textSize="@dimen/size_12_dp"
+                android:textSize="@dimen/size_14_dp"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/padding_edit_text"
                 android:background="@drawable/et_bg_black"
@@ -85,9 +83,8 @@
             <TextView
                 android:layout_width="0dp"
                 android:textColor="@android:color/black"
-                android:fontFamily="serif-monospace"
                 android:textStyle="bold"
-                android:textSize="@dimen/size_12_dp"
+                android:textSize="@dimen/size_14_dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Harga Lapak" />
@@ -100,7 +97,7 @@
                 android:layout_weight="1"
                 android:padding="@dimen/padding_edit_text"
                 android:background="@drawable/et_bg_black"
-                android:textSize="@dimen/size_12_dp"
+                android:textSize="@dimen/size_14_dp"
                 android:inputType="number"/>
 
         </TableRow>
@@ -111,7 +108,7 @@
                 android:textColor="@android:color/white"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:textSize="@dimen/size_12_dp"
+                android:textSize="@dimen/size_14_dp"
                 android:background="@drawable/green_button"
                 android:layout_weight="1"
                 />
