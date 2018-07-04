@@ -81,22 +81,40 @@
             android:layout_weight="1"
             android:inputType="number"/>
     </TableRow>
-    <TableRow
-        android:paddingBottom="@dimen/size_10_dp">
+
+    <TableRow android:paddingBottom="@dimen/size_10_dp">
+
         <TextView
             android:layout_width="0dp"
-            android:textSize="@dimen/size_14_dp"
             android:layout_height="wrap_content"
-            android:text="Poin"
-            android:textStyle="bold"
-            android:layout_weight="1"/>
-        <DatePicker
-            android:padding="5dp"
+            android:layout_weight="1"
+            android:text="Periode"
+            android:textSize="@dimen/size_14_dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editDate"
             android:layout_width="0dp"
-            android:textSize="@dimen/size_14_dp"
             android:layout_height="wrap_content"
-            android:id="@+id/date"
-            android:layout_weight="1" />
+            android:layout_weight="0.7"
+            android:background="@drawable/et_bg_black"
+            android:inputType="date"
+            android:padding="5dp"
+            android:textSize="@dimen/size_14_dp" />
+
+        <Button
+            android:id="@+id/calendarButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:drawableEnd="@drawable/ic_action_calendar" />
+        <!--<DatePicker-->
+        <!--android:padding="5dp"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:textSize="@dimen/size_14_dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/date"-->
+        <!--android:layout_weight="1" />-->
     </TableRow>
     <TableRow
         android:gravity="center">

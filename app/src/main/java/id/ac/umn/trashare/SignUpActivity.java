@@ -26,14 +26,15 @@ public class SignUpActivity extends AppCompatActivity {
         final EditText password = (EditText) findViewById(R.id.editPassword);
 
         final Member newMember = new Member(email.getText().toString(), name.getText().toString(), password.getText().toString());
-        System.out.println(email.getText().toString());
-        System.out.println(name.getText().toString());
-        System.out.println(password.getText().toString());
+
 
         Button btnSignUp = (Button) findViewById(R.id.btnSignUp);
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                System.out.println(email.getText().toString());
+                System.out.println(name.getText().toString());
+                System.out.println(password.getText().toString());
 
                 Webservice.getService(getBaseContext()).createMember(newMember).enqueue(new Callback<id.ac.umn.trashare.models.Member>() {
                     @Override

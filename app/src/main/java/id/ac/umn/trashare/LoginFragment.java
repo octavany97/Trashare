@@ -93,6 +93,17 @@ public class LoginFragment extends Fragment {
 
                 }
                 else if(spinner.getSelectedItem().equals("Pengurus")){
+                    if(username.getText().toString().equals("pengurus") && password.getText().toString().equals("pengurus")){
+                        Intent i = new Intent(getActivity(), PengurusActivity.class);
+                        startActivity(i);
+                        ((Activity) getActivity()).overridePendingTransition(0,0);
+                        //getActivity().getFragmentManager().beginTransaction().remove(LoginFragment.this).commit();
+                        getActivity().finish();
+                    }
+                    else{
+                        Toast.makeText(getActivity(), "Username atau password tidak terdaftar!", Toast.LENGTH_SHORT).show();
+                    }
+                    /*
                     Map<String, String> body = new HashMap<>();
                     body.put("email", username.getText().toString());
                     body.put("password", password.getText().toString());
@@ -120,8 +131,20 @@ public class LoginFragment extends Fragment {
                             Toast.makeText(getActivity(), t.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     });
+                    */
                 }
                 else if(spinner.getSelectedItem().equals("Yayasan")) {
+                    if(username.getText().toString().equals("yayasan") && password.getText().toString().equals("yayasan")){
+                        Intent i = new Intent(getActivity(), YayasanActivity.class);
+                        startActivity(i);
+                        ((Activity) getActivity()).overridePendingTransition(0,0);
+                        //getActivity().getFragmentManager().beginTransaction().remove(LoginFragment.this).commit();
+                        getActivity().finish();
+                    }
+                    else{
+                        Toast.makeText(getActivity(), "Username atau password tidak terdaftar!", Toast.LENGTH_SHORT).show();
+                    }
+                    /*
                     Map<String, String> body = new HashMap<>();
                     body.put("email", username.getText().toString());
                     body.put("password", password.getText().toString());
@@ -149,6 +172,7 @@ public class LoginFragment extends Fragment {
                             Toast.makeText(getActivity(), t.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     });
+                    */
                 }
 
             }
