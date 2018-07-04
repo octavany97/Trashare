@@ -1,5 +1,6 @@
 package id.ac.umn.trashare;
 
+import android.app.ProgressDialog;
 import android.support.v4.app.Fragment;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -25,6 +26,7 @@ public class PoinSayaFragment extends Fragment{
     View v;
     private ListView listHadiah;
     private SwipeRefreshLayout swipeRefreshLayout;
+    ProgressDialog pdLoading;
 
     private List<Hadiah> hadiahList;
     @Nullable
@@ -48,17 +50,25 @@ public class PoinSayaFragment extends Fragment{
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        pdLoading = new ProgressDialog(getActivity());
+
+        pdLoading.setMessage("Please wait...");
+        pdLoading.setTitle("\tLoading...");
+        pdLoading.setCancelable(false);
+
         getData();
     }
 
     private void getData() {
+        pdLoading.show();
         Webservice.getService(getActivity()).getAllHadiah().enqueue(new Callback<List<Hadiah>>() {
             @Override
             public void onResponse(Call<List<Hadiah>> call, Response<List<Hadiah>> response) {
+                pdLoading.dismiss();
                 hadiahList = response.body();
                 listHadiah =(ListView) v.findViewById(R.id.listHadiah);
                 HadiahListAdapter adapter = new HadiahListAdapter(getActivity(), hadiahList);
-                //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,items);
+
                 listHadiah.setAdapter(adapter);
 
 
@@ -67,7 +77,6 @@ public class PoinSayaFragment extends Fragment{
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                         TextView textView = (TextView) view.findViewById(R.id.text1);
                         System.out.println(textView.getText().toString());
-                        System.out.println("HAHA");
                     }
 
                 });
@@ -75,29 +84,8 @@ public class PoinSayaFragment extends Fragment{
 
             @Override
             public void onFailure(Call<List<Hadiah>> call, Throwable t) {
-
+                pdLoading.dismiss();
             }
         });
     }
-
-    //    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.fragment_poin_saya);
-//
-//        ListView listView =(ListView) findViewById(R.id.listHadiah);
-//        final String[] items = new String[] {"Hadiah 1", "Hadiah 2", "Hadiah 3"};
-//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,items);
-//        listView.setAdapter(adapter);
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                Intent intent = new Intent(getBaseContext(), DetailRedeemPrizeActivity.class);
-//                //System.out.println(items[i].toString());
-//                intent.putExtra("name", items[i].toString());
-//                startActivity(intent);
-//                // Toast.makeText(getActivity().getApplicationContext(),items[i], Toast.LENGTH_SHORT).show();
-//            }
-//        });
-//    }
 }

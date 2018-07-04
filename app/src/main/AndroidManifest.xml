@@ -62,7 +62,8 @@
             android:name=".PoinMemberActivity"
             android:label="@string/title_activity_poin_member"
             android:theme="@style/AppTheme" />
-        <activity android:name=".EditProfileActivity"></activity>
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".DetailBerandaActivity"></activity>
     </application>
 
 </manifest>

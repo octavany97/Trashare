@@ -7,4 +7,5 @@ public class Kegiatan implements Serializable {
     public long idKegiatan;
     public String namaKegiatan;
     public String tanggalKegiatan;
+    public String fotoKegiatan;
 }

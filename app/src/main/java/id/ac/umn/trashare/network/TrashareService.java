@@ -119,7 +119,7 @@ public interface TrashareService {
     Call<Sampah> getOneSampah(@Body Sampah sampah);
 
     @PUT("sampah/{id}")
-    Call<Sampah> updateSampah(@Path("id") String idHadiah, @Body Hadiah hadiah);
+    Call<Sampah> updateSampah(@Path("id") String idSampah, @Body Sampah sampah);
 
     @DELETE("sampah/{id}")
     Call<Boolean> deleteSampah(@Path("id") String idSampah);

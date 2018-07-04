@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/size_16_dp"
+    android:orientation="vertical"
+    tools:context="id.ac.umn.trashare.DetailBerandaActivity">
+
+    <TextView
+        android:id="@+id/judul_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="@dimen/size_32_dp"
+        android:textColor="@color/md_black_1000"
+        android:text="Judul"/>
+
+    <TextView
+        android:id="@+id/tanggal_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="tanggal"/>
+
+    <ImageView
+        android:id="@+id/foto_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/deskripsi_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_black_1000"
+        android:text="Deskripsi"/>
+
+</LinearLayout>
