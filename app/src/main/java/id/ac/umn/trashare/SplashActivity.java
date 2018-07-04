@@ -9,6 +9,14 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import java.util.List;
+
+import id.ac.umn.trashare.models.Yayasan;
+import id.ac.umn.trashare.utils.Webservice;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 public class SplashActivity extends Activity {
 
     private ImageView iv;

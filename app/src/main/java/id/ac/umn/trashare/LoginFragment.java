@@ -49,7 +49,7 @@ public class LoginFragment extends Fragment {
         cardLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(spinner.getSelectedItem().equals("Member")){
+                if(spinner.getSelectedItem().equals("Anggota")){
                     if(username.getText().toString().equals("member") && password.getText().toString().equals("member")){
                         Intent i = new Intent(getActivity(), MemberActivity.class);
                         startActivity(i);
