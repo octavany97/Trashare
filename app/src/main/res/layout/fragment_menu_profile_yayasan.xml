@@ -32,9 +32,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="ID"
+                    android:text="ID Special"
                     android:textColor="#000"
-                    android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -44,7 +43,6 @@
                     android:layout_weight="1"
                     android:text="#313421"
                     android:textColor="#000"
-                    android:textSize="15sp"
                     android:textStyle="bold" />
             </TableRow>
 
@@ -55,9 +53,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="Nama"
+                    android:text="N.Yayasan"
                     android:textColor="#000"
-                    android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -67,32 +64,29 @@
                     android:layout_weight="1"
                     android:text="Trashare"
                     android:textColor="#000"
-                    android:textSize="15sp"
                     android:textStyle="bold" />
             </TableRow>
 
-            <TableRow>
+            <!--<TableRow>-->
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="1"
-                    android:text="Nama BS"
-                    android:textColor="#000"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="N.BS"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textStyle="bold" />-->
 
-                <TextView
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="1"
-                    android:text="Melati"
-                    android:textColor="#000"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-            </TableRow>
+                <!--<TextView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="Melati"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textStyle="bold" />-->
+            <!--</TableRow>-->
 
             <TableRow>
 
@@ -103,7 +97,6 @@
                     android:layout_weight="1"
                     android:text="Email"
                     android:textColor="#000"
-                    android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -111,9 +104,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="trashare@gmail.com"
+                    android:text="melatiyayasan@gmail.com"
                     android:textColor="#000"
-                    android:textSize="15sp"
                     android:textStyle="bold" />
             </TableRow>
         </TableLayout>
@@ -147,8 +139,8 @@
                 android:gravity="center_horizontal">
 
                 <android.support.v7.widget.CardView
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_marginTop="50dp"
                     app:cardCornerRadius="@dimen/size_20_dp"
                     app:cardElevation="@dimen/size_20_dp">
@@ -159,17 +151,19 @@
                         android:gravity="center">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Poin"
+                            android:text="Bank Sampah"
+                            android:gravity="center"
                             android:textStyle="bold"
                             android:textColor="@color/md_black_1000"
                             android:textSize="15sp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:paddingTop="30dp"
+                            android:gravity="center"
                             android:text="250"
                             android:textColor="@color/md_black_1000"
                             android:textSize="15sp"
@@ -177,37 +171,37 @@
                     </RelativeLayout>
                 </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:layout_marginLeft="@dimen/size_20_dp"
-                    android:layout_marginTop="50dp"
-                    app:cardCornerRadius="@dimen/size_20_dp"
-                    app:cardElevation="@dimen/size_20_dp">
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:layout_width="90dp"-->
+                    <!--android:layout_height="90dp"-->
+                    <!--android:layout_marginLeft="@dimen/size_20_dp"-->
+                    <!--android:layout_marginTop="50dp"-->
+                    <!--app:cardCornerRadius="@dimen/size_20_dp"-->
+                    <!--app:cardElevation="@dimen/size_20_dp">-->
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center">
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center">-->
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Poin"
-                            android:textStyle="bold"
-                            android:textColor="@color/md_black_1000"
-                            android:textSize="15sp" />
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Poin"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textColor="@color/md_black_1000"-->
+                            <!--android:textSize="15sp" />-->
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingTop="30dp"
-                            android:text="250"
-                            android:textColor="@color/md_black_1000"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-                </android.support.v7.widget.CardView>
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingTop="30dp"-->
+                            <!--android:text="250"-->
+                            <!--android:textColor="@color/md_black_1000"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:textStyle="bold" />-->
+                    <!--</RelativeLayout>-->
+                <!--</android.support.v7.widget.CardView>-->
             </LinearLayout>
         </LinearLayout>
 

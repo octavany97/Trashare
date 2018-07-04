@@ -35,8 +35,6 @@
         <activity android:name=".AddPrizeActivity" />
         <activity android:name=".DetailPrizeYayasanActivity" />
         <activity android:name=".FormRegistrasiBankSampahActivity" />
-        <activity android:name=".PoinSayaFragment" />
-        <activity android:name=".HistoryPoinFragment" />
         <activity android:name=".RedeemPrizeActivity" />
         <activity android:name=".DetailRedeemPrizeActivity" />
         <activity android:name=".DetailNotifikasiMemberActivity" />
