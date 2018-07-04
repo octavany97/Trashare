@@ -16,10 +16,20 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.List;
+
+import id.ac.umn.trashare.models.Hadiah;
+import id.ac.umn.trashare.utils.Webservice;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 public class PoinSayaFragment extends Fragment{
 
     View v;
     private ListView listHadiah;
+
+    private List<Hadiah> hadiahList;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -45,6 +55,23 @@ public class PoinSayaFragment extends Fragment{
 
 
         return v;
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        Webservice.getService(getActivity()).getAllHadiah().enqueue(new Callback<List<Hadiah>>() {
+            @Override
+            public void onResponse(Call<List<Hadiah>> call, Response<List<Hadiah>> response) {
+                hadiahList = response.body();
+            }
+
+            @Override
+            public void onFailure(Call<List<Hadiah>> call, Throwable t) {
+
+            }
+        });
     }
 
     //    @Override
