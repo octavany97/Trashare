@@ -1,8 +1,9 @@
 package id.ac.umn.trashare.models;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class BankSampah {
+public class BankSampah implements Serializable {
     public String alamat;
     public String deskripsiBankSampah;
     public String email;

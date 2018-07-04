@@ -1,6 +1,8 @@
 package id.ac.umn.trashare.models;
 
-public class Sampah {
+import java.io.Serializable;
+
+public class Sampah implements Serializable {
     public long hargaBeliLapak;
     public long hargaBeliNasabah;
     public long idSampah;
