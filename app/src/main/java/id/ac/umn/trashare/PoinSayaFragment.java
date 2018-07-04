@@ -1,6 +1,7 @@
 package id.ac.umn.trashare;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -9,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -71,12 +73,18 @@ public class PoinSayaFragment extends Fragment{
 
                 listHadiah.setAdapter(adapter);
 
-
                 listHadiah.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                        TextView textView = (TextView) view.findViewById(R.id.text1);
-                        System.out.println(textView.getText().toString());
+
+                        Intent intent = new Intent(getActivity(), DetailRedeemPrizeActivity.class);
+                        intent.putExtra("name", hadiahList.get(i).namaHadiah);
+                        intent.putExtra("poin", String.valueOf(hadiahList.get(i).poin));
+                        intent.putExtra("valid", hadiahList.get(i).periodeTukar);
+                        intent.putExtra("sponsor", hadiahList.get(i).sponsor);
+                        intent.putExtra("desc", hadiahList.get(i).deskripsiHadiah);
+                        intent.putExtra("img", hadiahList.get(i).fotoHadiah);
+                        startActivity(intent);
                     }
 
                 });
