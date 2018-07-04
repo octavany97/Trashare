@@ -10,6 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 import id.ac.umn.trashare.models.Kegiatan;
@@ -63,6 +64,7 @@ public class EventListAdapter extends BaseAdapter {
             text1 = (TextView) v.findViewById(R.id.text1);
             text2 = (TextView) v.findViewById(R.id.text2);
 
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy");
             byte[] imageAsBytes = Base64.decode(listKegiatan.get(position).fotoKegiatan, Base64.DEFAULT);
 
             imgView.setImageBitmap(BitmapFactory.decodeByteArray(imageAsBytes, 0, imageAsBytes.length));

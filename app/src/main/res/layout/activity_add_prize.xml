@@ -81,6 +81,37 @@
             android:layout_weight="1"
             android:inputType="number"/>
     </TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="@dimen/size_14_dp"
+            android:layout_height="wrap_content"
+            android:text="Poin"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <DatePicker
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:textSize="@dimen/size_14_dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:layout_weight="1" />
+    </TableRow>
+    <TableRow
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/gambar_hadiah"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1.5"/>
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Cari"/>
+    </TableRow>
     <TableRow>
         <Button
             android:id="@+id/btnAdd"
