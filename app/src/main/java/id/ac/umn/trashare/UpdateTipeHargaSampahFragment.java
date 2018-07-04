@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.List;
@@ -47,6 +48,15 @@ public class UpdateTipeHargaSampahFragment extends Fragment {
             }
         });
 
+        Button btnAdd = (Button) v.findViewById(R.id.btnAdd);
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), AddSampahActivity.class);
+                startActivity(i);
+            }
+        });
+
         return v;
     }
 
@@ -67,13 +77,15 @@ public class UpdateTipeHargaSampahFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
+        swipeRefreshSampah.setRefreshing(true);
+        getData();
     }
     private void getData(){
         pdLoading.show();
         Webservice.getService(getActivity()).getAllSampah().enqueue(new Callback<List<Sampah>>() {
             @Override
             public void onResponse(Call<List<Sampah>> call, Response<List<Sampah>> response) {
-
+                if (swipeRefreshSampah.isRefreshing()) swipeRefreshSampah.setRefreshing(false);
                 pdLoading.dismiss();
 
                 sampahList = response.body();
@@ -84,12 +96,12 @@ public class UpdateTipeHargaSampahFragment extends Fragment {
                 listSampah.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                        Intent intent = new Intent(getActivity(), DetailBerandaActivity.class);
-                        intent.putExtra("idSampah", sampahList.get(i).idSampah);
+                        Intent intent = new Intent(getActivity(), UpdateSampahActivity.class);
+                        intent.putExtra("idSampah", String.valueOf(sampahList.get(i).idSampah));
                         intent.putExtra("nama", sampahList.get(i).namaSampah);
                         intent.putExtra("tipe", sampahList.get(i).tipeSampah);
-                        intent.putExtra("hargaNasabah", sampahList.get(i).hargaBeliNasabah);
-                        intent.putExtra("hargaLapak", sampahList.get(i).hargaBeliLapak);
+                        intent.putExtra("hargaNasabah", String.valueOf(sampahList.get(i).hargaBeliNasabah));
+                        intent.putExtra("hargaLapak", String.valueOf(sampahList.get(i).hargaBeliLapak));
 
                         startActivity(intent);
                     }
@@ -99,6 +111,7 @@ public class UpdateTipeHargaSampahFragment extends Fragment {
             @Override
             public void onFailure(Call<List<Sampah>> call, Throwable t) {
                 pdLoading.dismiss();
+                if (swipeRefreshSampah.isRefreshing()) swipeRefreshSampah.setRefreshing(false);
             }
         });
     }

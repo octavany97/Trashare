@@ -116,7 +116,7 @@ public interface TrashareService {
     Call<Sampah> getOneSampah(@Path("id") String idSampah);
 
     @POST("sampah")
-    Call<Sampah> getOneSampah(@Body Sampah sampah);
+    Call<Sampah> createSampah(@Body Sampah sampah);
 
     @PUT("sampah/{id}")
     Call<Sampah> updateSampah(@Path("id") String idSampah, @Body Sampah sampah);

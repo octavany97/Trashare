@@ -6,21 +6,33 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <ListView
-        android:id="@+id/listSampah"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true">
+        android:layout_height="wrap_content">
 
-    </ListView>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tambah Sampah"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/btnAdd"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60dp">
+            <ListView
+                android:id="@+id/listSampah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
 
-        />
+            </ListView>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah Sampah"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/green_button"
+            android:id="@+id/btnAdd"
+            android:textColor="@color/md_white_1000"
+
+            />
+    </RelativeLayout>
 
 </android.support.v4.widget.SwipeRefreshLayout>

@@ -62,8 +62,8 @@ public class SampahListAdapter extends BaseAdapter{
             text3 = (TextView) v.findViewById(R.id.txtLapak);
 
             text1.setText(listSampah.get(position).namaSampah);
-            text2.setText(String.valueOf(listSampah.get(position).hargaBeliNasabah));
-            text3.setText(String.valueOf(listSampah.get(position).hargaBeliLapak));
+            text2.setText("Harga Nasabah " + String.valueOf(listSampah.get(position).hargaBeliNasabah));
+            text3.setText("Harga Lapak " +String.valueOf(listSampah.get(position).hargaBeliLapak));
         }
 
         return v;

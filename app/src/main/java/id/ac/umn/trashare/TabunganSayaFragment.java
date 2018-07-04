@@ -29,6 +29,7 @@ public class TabunganSayaFragment extends Fragment {
         ListViewAdapter adapter = new ListViewAdapter(getActivity(), items, 3);
         //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,items);
         listView.setAdapter(adapter);
+        listView.setClickable(false);
         /*
         TableLayout tblHistory = v.findViewById(R.id.tblHistory);
 

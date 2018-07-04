@@ -29,10 +29,11 @@
 
         <TextView
             android:id="@+id/txtLapak"
-            android:layout_alignParentRight="true"
             android:layout_width="match_parent"
-            android:layout_below="@+id/txtSampah"
             android:layout_height="wrap_content"
+
+            android:layout_below="@+id/txtSampah"
+            android:layout_marginStart="189dp"
             android:text="Text 3"
             android:textSize="12dp"
             android:textStyle="bold" />
