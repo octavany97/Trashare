@@ -112,5 +112,6 @@ public class PengaturanHadiahFragment extends Fragment {
                 pdLoading.dismiss();
             }
         });
+
     }
 }
