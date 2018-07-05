@@ -27,7 +27,7 @@ public class UpdateJadwalFragment extends Fragment {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int year, int month, int dayOfMonth) {
                 GregorianCalendar getDate = new GregorianCalendar(year, month, dayOfMonth);
-                datePick = dayOfMonth + "/" + month + "/" + year;
+                datePick = dayOfMonth + "/" + (month+1) + "/" + year;
                 date.setText(datePick);
             }
         });

@@ -18,10 +18,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class DetailBSMapActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    private String name = "";
-    private String location = "";
-    private String image = "";
-    private String info = "Informasi Bank Sampah ";
+    private String name, leader, address, location, phone, email;
+    private String info = "Informasi ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,17 +31,30 @@ public class DetailBSMapActivity extends FragmentActivity implements OnMapReadyC
         mapFragment.getMapAsync(this);
 
         name = getIntent().getStringExtra("name");
+        leader = getIntent().getStringExtra("leader");
+        address = getIntent().getStringExtra("address");
         location = getIntent().getStringExtra("location");
-        image = getIntent().getStringExtra("image");
+        phone = getIntent().getStringExtra("phone");
+        email = getIntent().getStringExtra("email");
+
         info += name;
 
         TextView txtInfo = (TextView) findViewById(R.id.nama_bs);
         txtInfo.setText(info);
 
-        TextView txtNama = (TextView) findViewById(R.id.nama_banksampah);
-        txtNama.setText(name);
+        TextView txtNama = (TextView) findViewById(R.id.txtNama);
+        txtNama.setText(leader);
 
-        TextView txtLokasi = (TextView) findViewById(R.id.nama_lokasi);
+        TextView txtAddress = (TextView) findViewById(R.id.txtAlamat);
+        txtAddress.setText(address);
+
+        TextView txtPhone= (TextView) findViewById(R.id.txtTelp);
+        txtPhone.setText(phone);
+
+        TextView txtEmail = (TextView) findViewById(R.id.txtEmail);
+        txtEmail.setText(email);
+
+        TextView txtLokasi = (TextView) findViewById(R.id.txtWilayah);
         txtLokasi.setText(location);
 
         final String access = getIntent().getStringExtra("access");

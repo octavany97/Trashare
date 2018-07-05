@@ -47,6 +47,14 @@ public class InputSampahFragment extends Fragment {
             }
         });
 
+        Button input = (Button) v.findViewById(R.id.inputSampahButton);
+        input.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
 
         Button addSampahButton = (Button) v.findViewById(R.id.addSampahButton);
         addSampahButton.setOnClickListener(new View.OnClickListener() {

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:orientation="vertical"
+    android:id="@+id/swipeRefresh"
     tools:context="id.ac.umn.trashare.PoinSayaFragment">
 
     <TableLayout
@@ -33,6 +33,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Cari Hadiah : "
+                android:textSize="14dp"
                 android:layout_weight="1"/>
             <EditText
                 android:layout_width="0dp"
@@ -41,11 +42,15 @@
                 android:inputType="text"
                 android:layout_weight="1"/>
         </TableRow>
-
-
-        <ListView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/listHadiah" />
+            android:orientation="vertical"
+            >
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listHadiah" />
+        </LinearLayout>
     </TableLayout>
-</LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

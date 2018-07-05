@@ -100,7 +100,7 @@ public interface TrashareService {
     Call<Hadiah> getOneHadiah(@Path("id") String idHadiah);
 
     @POST("hadiah")
-    Call<Hadiah> getOneHadiah(@Body Hadiah hadiah);
+    Call<Hadiah> createHadiah(@Body Hadiah hadiah);
 
     @PUT("hadiah/{id}")
     Call<Hadiah> updateHadiah(@Path("id") String idHadiah, @Body Hadiah hadiah);
@@ -116,10 +116,10 @@ public interface TrashareService {
     Call<Sampah> getOneSampah(@Path("id") String idSampah);
 
     @POST("sampah")
-    Call<Sampah> getOneSampah(@Body Sampah sampah);
+    Call<Sampah> createSampah(@Body Sampah sampah);
 
     @PUT("sampah/{id}")
-    Call<Sampah> updateSampah(@Path("id") String idHadiah, @Body Hadiah hadiah);
+    Call<Sampah> updateSampah(@Path("id") String idSampah, @Body Sampah sampah);
 
     @DELETE("sampah/{id}")
     Call<Boolean> deleteSampah(@Path("id") String idSampah);

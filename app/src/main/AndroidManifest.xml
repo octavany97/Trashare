@@ -3,8 +3,8 @@
     package="id.ac.umn.trashare">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -36,26 +36,12 @@
         <activity android:name=".AddPrizeActivity" />
         <activity android:name=".DetailPrizeYayasanActivity" />
         <activity android:name=".FormRegistrasiBankSampahActivity" />
-        <activity android:name=".PoinSayaFragment" />
-        <activity android:name=".HistoryPoinFragment" />
         <activity android:name=".RedeemPrizeActivity" />
         <activity android:name=".DetailRedeemPrizeActivity" />
         <activity android:name=".DetailNotifikasiMemberActivity" />
         <activity android:name=".DetailEventPengurusActivity" />
         <activity android:name=".GantiPasswordActivity" />
         <activity android:name=".AddEventPengurusActivity" />
-        <activity android:name=".MapActivity" />
-        <service android:name=".MyFirebaseMessagingService">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
-
-        <service android:name=".MyFirebaseInstanceIDService">
-            <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-            </intent-filter>
-        </service>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -66,7 +52,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyA0ZW4CJE0z5dyg-5-bbrcTL9pWq7fHxMw" />
+            android:value="@string/google_maps_key" />
 
         <activity
             android:name=".DetailBSMapActivity"
@@ -75,6 +61,8 @@
             android:name=".PoinMemberActivity"
             android:label="@string/title_activity_poin_member"
             android:theme="@style/AppTheme" />
-        <activity android:name=".EditProfileActivity"></activity>
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".DetailBerandaActivity"></activity>
     </application>
+
 </manifest>
