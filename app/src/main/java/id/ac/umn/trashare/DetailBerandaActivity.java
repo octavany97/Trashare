@@ -3,13 +3,10 @@ package id.ac.umn.trashare;
 import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-<<<<<<< HEAD
 import android.support.v7.widget.Toolbar;
 import android.util.Base64;
 import android.view.MenuItem;
-=======
 import android.util.Base64;
->>>>>>> dev
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -22,7 +19,6 @@ public class DetailBerandaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_beranda);
 
-<<<<<<< HEAD
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         //toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
@@ -30,8 +26,6 @@ public class DetailBerandaActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         this.setTitle("Detail Beranda");
 
-=======
->>>>>>> dev
         TextView judul = (TextView) findViewById(R.id.judul_text);
         TextView tanggal = (TextView) findViewById(R.id.tanggal_text);
         TextView deskripsi = (TextView) findViewById(R.id.deskripsi_text);
@@ -44,7 +38,7 @@ public class DetailBerandaActivity extends AppCompatActivity {
 
         gambar.setImageBitmap(BitmapFactory.decodeByteArray(imageAsBytes, 0, imageAsBytes.length));
     }
-<<<<<<< HEAD
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -61,6 +55,4 @@ public class DetailBerandaActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-=======
->>>>>>> dev
 }

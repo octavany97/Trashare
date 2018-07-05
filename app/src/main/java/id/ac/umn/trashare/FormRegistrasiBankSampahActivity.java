@@ -28,7 +28,7 @@ public class FormRegistrasiBankSampahActivity extends AppCompatActivity {
             }
         });
         String [] values =
-                {"RT","RW","KECAMATAN","KELURAHAN"};
+                {"Bekasi","Depok","Legok","Pamulang","Tigaraksa","Tangerang Kota", "Tangerang Selatan"};
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner_wilayah);
         ArrayAdapter<String> LTRadapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, values);

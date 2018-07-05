@@ -130,6 +130,8 @@
     android:layout_height="wrap_content"
     android:gravity="center">
     <Button
+
+        android:background="@drawable/green_button"
         android:id="@+id/btn_signup"
         android:text="Registrasi Nasabah"
         android:layout_width="wrap_content"
