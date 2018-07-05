@@ -3,6 +3,7 @@
     package="id.ac.umn.trashare">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -43,6 +44,18 @@
         <activity android:name=".DetailEventPengurusActivity" />
         <activity android:name=".GantiPasswordActivity" />
         <activity android:name=".AddEventPengurusActivity" />
+        <activity android:name=".MapActivity" />
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -53,7 +66,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyA0ZW4CJE0z5dyg-5-bbrcTL9pWq7fHxMw" />
 
         <activity
             android:name=".DetailBSMapActivity"
@@ -64,5 +77,4 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".EditProfileActivity"></activity>
     </application>
-
 </manifest>
