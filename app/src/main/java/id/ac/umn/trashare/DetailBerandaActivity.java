@@ -38,8 +38,6 @@ public class DetailBerandaActivity extends AppCompatActivity {
 
         gambar.setImageBitmap(BitmapFactory.decodeByteArray(imageAsBytes, 0, imageAsBytes.length));
     }
-
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
