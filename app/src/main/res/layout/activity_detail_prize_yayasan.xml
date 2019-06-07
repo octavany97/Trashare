@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context="id.ac.umn.trashare.DetailPrizeYayasanActivity">
+
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_12_dp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editNama"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:background="@drawable/et_bg_black"
+            android:textSize="@dimen/size_12_dp"
+            android:padding="@dimen/padding_edit_text"
+            android:text="Pulsa 10.000"/>
+    </TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_12_dp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editDescription"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:padding="@dimen/padding_edit_text"
+            android:textStyle="bold"
+            android:background="@drawable/et_bg_black"
+            android:textSize="@dimen/size_12_dp"
+            android:text="Isi ulang pulsa Anda senilai 10.000"/>
+    </TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sponsor : "
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_12_dp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSponsor"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:padding="@dimen/padding_edit_text"
+            android:background="@drawable/et_bg_black"
+            android:textSize="@dimen/size_12_dp"
+            android:text="Telkomsel, Indosat, XL, dll"/>
+    </TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Poin : "
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_12_dp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editPoint"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:padding="@dimen/padding_edit_text"
+            android:background="@drawable/et_bg_black"
+            android:textSize="@dimen/size_12_dp"
+            android:text="100"/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnDelete"
+            android:text="Hapus"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_button"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="@dimen/padding_edit_text"
+            android:textSize="@dimen/size_12_dp"/>
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:text="Ubah"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_button"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="@dimen/padding_edit_text"
+            android:textSize="@dimen/size_12_dp"/>
+    </TableRow>
+
+</TableLayout>

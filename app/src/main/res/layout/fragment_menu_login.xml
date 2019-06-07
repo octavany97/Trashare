@@ -1,68 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:gravity="center">
+    android:gravity="center"
+    android:padding="16dp">
 
-    <ImageView
-        android:src="@mipmap/ic_launcher"
-        />
-    <TableRow>
-        <TextView
-            android:text="Login"
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="16dp">
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logowarna" />
+    </LinearLayout>
+
+
+    <TableRow android:paddingTop="20dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_mail_outline_black_24dp" />
+
+        <EditText
+            android:id="@+id/username_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="@dimen/size_12_dp"
+            android:padding="@dimen/padding_edit_text"
+            android:background="#11000000"
+            android:hint="Email"
+            android:inputType="text" />
+    </TableRow>
+
+    <TableRow
+        android:paddingTop="16dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_vpn_key_black_24dp" />
+
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="@dimen/size_12_dp"
+            android:padding="@dimen/padding_edit_text"
+            android:background="#11000000"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </TableRow>
+
+    <TableRow
+        android:paddingBottom="@dimen/size_16_dp"
+        android:paddingTop="@dimen/size_16_dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_menu_manage" />
+
+        <Spinner
+            android:backgroundTint="@color/md_black_1000"
+            android:textSize="@dimen/size_12_dp"
+            android:textAlignment="center"
+            android:textColor="@color/md_black_1000"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:id="@+id/spinner_wilayah"
+            android:textStyle="bold"
+            android:background="#10000000"
+            android:layout_weight="3"/>
+    </TableRow>
+
+    <RelativeLayout>
+        <Button
+            android:id="@+id/forget_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/size_12_dp"
+            android:textColor="@color/md_grey_700"
+            android:text="Lupa Password?"/>
+    </RelativeLayout>
+
+    <TableRow android:paddingTop="@dimen/size_10_dp">
+        <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textAlignment="center"
-            android:fontFamily="cursive"
-            android:textSize="50dp" />
-    </TableRow>
+            android:background="@drawable/btn_bg_black"
+            android:alpha="0" />
+        <Button
+            android:id="@+id/cardLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/green_button"
 
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
+            android:text="Masuk" />
+        <Button
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Username : "
-            android:layout_weight="1"/>
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/username_edit"
-            android:inputType="text"
-            android:layout_weight="1"/>
-    </TableRow>
-
-    <TableRow>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Password : "
-            android:layout_weight="1"/>
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/password_edit"
-            android:inputType="textPassword"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_black"
+            android:alpha="0" />
     </TableRow>
 
     <TableRow>
         <Button
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
+            android:id="@+id/cardRegister"
+            android:text="Daftar"
             android:layout_height="wrap_content"
-            android:text="Masuk"
-            android:id="@+id/btnLogin"
-            />
-
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center" />
     </TableRow>
-    <TableRow>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:text="Daftar"
-        android:id="@+id/btnRegister"/>
-    </TableRow>
-</TableLayout>
+    </TableLayout>
+</ScrollView>

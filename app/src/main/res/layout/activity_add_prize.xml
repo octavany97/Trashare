@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/size_16_dp"
+    tools:context="id.ac.umn.trashare.AddPrizeActivity">
+
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="@dimen/size_14_dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Nama"
+            android:layout_weight="1"/>
+        <EditText
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:textSize="@dimen/size_14_dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg_black"
+            android:id="@+id/editNama"
+            android:layout_weight="1"/>
+    </TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="@dimen/size_14_dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Deskripsi"
+            android:layout_weight="1"/>
+        <EditText
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:textSize="@dimen/size_14_dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg_black"
+            android:id="@+id/editDescription"
+            android:layout_weight="1"/>
+    </TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="@dimen/size_14_dp"
+            android:layout_height="wrap_content"
+            android:text="Sponsor"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <EditText
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:textSize="@dimen/size_14_dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg_black"
+            android:id="@+id/editSponsor"
+            android:layout_weight="1"/>
+    </TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="@dimen/size_14_dp"
+            android:layout_height="wrap_content"
+            android:text="Poin"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <EditText
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:textSize="@dimen/size_14_dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editPoint"
+            android:background="@drawable/et_bg_black"
+            android:layout_weight="1"
+            android:inputType="number"/>
+    </TableRow>
+
+    <TableRow android:paddingBottom="@dimen/size_10_dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Periode"
+            android:textSize="@dimen/size_14_dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:background="@drawable/et_bg_black"
+            android:inputType="date"
+            android:padding="5dp"
+            android:textSize="@dimen/size_14_dp" />
+
+        <Button
+            android:id="@+id/calendarButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:drawableEnd="@drawable/ic_action_calendar" />
+        <!--<DatePicker-->
+        <!--android:padding="5dp"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:textSize="@dimen/size_14_dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/date"-->
+        <!--android:layout_weight="1" />-->
+    </TableRow>
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/gambar_hadiah"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1.5"/>
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Cari"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/btnAdd"
+            android:textSize="@dimen/size_14_dp"
+            android:text="Tambah"
+            android:background="@drawable/green_button"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_white_1000"/>
+    </TableRow>
+
+</TableLayout>

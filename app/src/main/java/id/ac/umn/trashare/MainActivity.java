@@ -19,6 +19,9 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private String access = "not login";
+    private String navUser = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +38,15 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        displaySelectedScreen(R.id.nav_beranda);
+        navUser = getIntent().getStringExtra("access");
+        if(navUser == null){
+            displaySelectedScreen(R.id.nav_beranda);
+        }
+        else{
+            displaySelectedScreen(R.id.nav_login);
+            navUser = "";
+        }
+
     }
 
     @Override
@@ -48,12 +59,12 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
+    }*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -98,7 +109,8 @@ public class MainActivity extends AppCompatActivity
 
     private void displaySelectedScreen(int itemId){
         Fragment fragment = null;
-
+        Bundle bundle = new Bundle();
+        bundle.putString("access", access);
         // Handle navigation view item clicks here.
         switch(itemId){
             case R.id.nav_beranda:
@@ -106,6 +118,7 @@ public class MainActivity extends AppCompatActivity
                 break;
             case R.id.nav_daftar:
                 fragment = new ListBankSampahFragment();
+                fragment.setArguments(bundle);
                 break;
             case R.id.nav_register:
                 fragment = new RegisterBankSampahFragment();

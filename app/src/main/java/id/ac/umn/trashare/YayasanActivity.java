@@ -2,6 +2,7 @@ package id.ac.umn.trashare;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -44,12 +45,12 @@ public class YayasanActivity extends AppCompatActivity implements NavigationView
         }
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
+    }*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -103,8 +104,17 @@ public class YayasanActivity extends AppCompatActivity implements NavigationView
             case R.id.nav_update:
                 fragment = new UpdateTipeHargaSampahFragment();
                 break;
-            case R.id.nav_register:
-                fragment = new RegisterBankSampahFragment();
+            case R.id.nav_event:
+                fragment = new EventYayasanFragment();
+                break;
+            case R.id.nav_reward:
+                fragment = new PengaturanHadiahFragment();
+                break;
+            case R.id.nav_notifikasi:
+                fragment = new NotifikasiYayasanFragment();
+                break;
+            case R.id.nav_profile:
+                fragment = new ProfileYayasanFragment();
                 break;
             case R.id.nav_logout:
                 Intent i = new Intent(this, MainActivity.class);
@@ -122,4 +132,6 @@ public class YayasanActivity extends AppCompatActivity implements NavigationView
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
     }
+
+
 }

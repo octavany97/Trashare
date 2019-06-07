@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:paddingBottom="@dimen/size_10_dp">
+            <TextView
+                android:text="ID Member"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/size_12_dp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/id_member_autocomplete"
+                android:hint="Masukkan ID Member"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/size_12_dp"
+                android:background="@drawable/et_bg_black"
+                android:padding="@dimen/padding_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Sampah"
+                android:layout_width="0dp"
+                android:textSize="@dimen/size_12_dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow>
+            <ListView
+                android:id="@+id/sampah_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scrollbars="vertical" />
+        </TableRow>
+
+
+        <TableRow
+            android:paddingTop="16dp">
+            <Button
+                android:id="@+id/addSampahButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textStyle="bold"
+                android:textSize="@dimen/size_12_dp"
+                android:foreground="@color/transparent"
+                android:textColor="@android:color/black"
+                android:text="tambah sampah" />
+        </TableRow>
+        <TableRow
+            android:paddingTop="16dp">
+            <Button
+                android:id="@+id/inputSampahButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/green_button"
+                android:textStyle="bold"
+                android:textSize="@dimen/size_12_dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@android:color/white"
+                android:text="input sampah" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

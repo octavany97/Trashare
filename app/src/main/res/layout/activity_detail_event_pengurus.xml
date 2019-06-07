@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.ac.umn.trashare.DetailEventPengurusActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@color/colorMenu"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:gravity="center"
+        >
+
+
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nama Kegiatan"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_14_dp"/>
+
+        <EditText
+            android:id="@+id/editNamaEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/et_bg_black"
+            android:inputType="textMultiLine"/>
+    </TableRow>
+
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Deskripsi"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_14_dp"/>
+
+        <EditText
+            android:id="@+id/editDescriptionEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/et_bg_black"
+            android:inputType="textMultiLine"/>
+
+    </TableRow>
+
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tempat"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_14_dp"/>
+
+        <EditText
+            android:id="@+id/editTempatEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/et_bg_black"
+            android:inputType="text"/>
+
+    </TableRow>
+
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tanggal"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_14_dp"/>
+
+        <EditText
+            android:id="@+id/editTanggalEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/et_bg_black"
+            android:inputType="date"/>
+
+    </TableRow>
+
+    <TableRow
+        android:paddingBottom="@dimen/size_10_dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Jam"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_14_dp"/>
+
+        <EditText
+            android:id="@+id/editJamEvent"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:inputType="time"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:background="@drawable/et_bg_black"
+            android:textSize="@dimen/size_14_dp"/>
+
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnEdit"
+            android:text="Ubah"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/green_button"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_14_dp"/>
+    </TableRow>
+    </TableLayout>
+</TableLayout>

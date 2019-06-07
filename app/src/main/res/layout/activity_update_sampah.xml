@@ -1,76 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="id.ac.umn.trashare.UpdateSampahActivity">
 
-    <TableRow>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Jenis :" />
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <EditText
-            android:id="@+id/editJenisSampah"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="textMultiLine"
-            android:text="Alumunium"/>
-    </TableRow>
-
-    <TableRow>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Harga Nasabah :" />
-
-        <EditText
-            android:id="@+id/editHargaNasabah"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="number"
-            android:text="6500"/>
-
-    </TableRow>
-
-    <TableRow>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Harga Lapak :" />
-
-        <EditText
-            android:id="@+id/editHargaLapak"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="number"
-            android:text="7000"/>
-
-    </TableRow>
-
-    <TableRow>
-        <Button
-            android:id="@+id/btnUpdate"
-            android:text="Ubah"
-            android:layout_height="wrap_content"
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_weight="1"
-            />
-        <Button
-            android:id="@+id/btnBack"
-            android:text="Kembali"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            />
-    </TableRow>
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorMenu"
+            app:titleTextColor="@color/md_white_1000"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <TableRow
+            android:paddingBottom="@dimen/size_10_dp">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="@dimen/size_14_dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Nama"
+                android:layout_weight="1"/>
+            <EditText
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:textSize="@dimen/size_14_dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg_black"
+                android:id="@+id/editJenisSampah"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow
+            android:paddingBottom="@dimen/size_10_dp">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="@dimen/size_14_dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Harga Nasabah"
+                android:layout_weight="1"/>
+            <EditText
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:textSize="@dimen/size_14_dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg_black"
+                android:id="@+id/editHargaNasabah"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow
+            android:paddingBottom="@dimen/size_10_dp">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="@dimen/size_14_dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Harga Lapak"
+                android:layout_weight="1"/>
+            <EditText
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:textSize="@dimen/size_14_dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg_black"
+                android:id="@+id/editHargaLapak"
+                android:layout_weight="1"/>
+        </TableRow>
+
+
+
+        <TableRow
+            android:paddingTop="16dp">
+            <Button
+                android:layout_marginRight="@dimen/size_12_dp"
+                android:id="@+id/btnDelete"
+                android:text="Hapus"
+                android:background="@drawable/red_button"
+                android:textColor="@color/md_white_1000"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/btnUpdate"
+                android:text="Ubah"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size_12_dp"
+                android:background="@drawable/green_button"
+                android:textStyle="bold"/>
+        </TableRow>
+    </TableLayout>
 </TableLayout>

@@ -15,6 +15,8 @@ import android.view.MenuItem;
 
 public class MemberActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
+    private String access = "member";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,12 +46,12 @@ public class MemberActivity extends AppCompatActivity implements NavigationView.
         }
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
+    }*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -94,7 +96,8 @@ public class MemberActivity extends AppCompatActivity implements NavigationView.
 
     private void displaySelectedScreen(int itemId){
         Fragment fragment = null;
-
+        Bundle bundle = new Bundle();
+        bundle.putString("access", access);
         // Handle navigation view item clicks here.
         switch(itemId){
             case R.id.nav_beranda:
@@ -102,9 +105,21 @@ public class MemberActivity extends AppCompatActivity implements NavigationView.
                 break;
             case R.id.nav_daftar:
                 fragment = new ListBankSampahFragment();
+                fragment.setArguments(bundle);
                 break;
-            case R.id.nav_register:
-                fragment = new RegisterBankSampahFragment();
+            case R.id.nav_redeem:
+                Intent ii = new Intent(this, PoinMemberActivity.class);
+                startActivity(ii);
+                finish();
+                break;
+            case R.id.nav_tabungan:
+                fragment = new TabunganSayaFragment();
+                break;
+            case R.id.nav_profile:
+                fragment = new ProfileMemberFragment();
+                break;
+            case R.id.nav_notifikasi:
+                fragment = new NotifikasiMemberFragment();
                 break;
             case R.id.nav_logout:
                 Intent i = new Intent(this, MainActivity.class);

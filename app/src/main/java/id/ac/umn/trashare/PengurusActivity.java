@@ -44,12 +44,12 @@ public class PengurusActivity extends AppCompatActivity implements NavigationVie
         }
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
+    }*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -92,19 +92,25 @@ public class PengurusActivity extends AppCompatActivity implements NavigationVie
         return true;
     }
 
-    private void displaySelectedScreen(int itemId){
+    private void displaySelectedScreen(int itemId) {
         Fragment fragment = null;
 
         // Handle navigation view item clicks here.
-        switch(itemId){
+        switch (itemId) {
             case R.id.nav_beranda:
                 fragment = new BerandaFragment();
                 break;
-            case R.id.nav_daftar:
-                fragment = new ListBankSampahFragment();
+            case R.id.nav_event:
+                fragment = new EventPengurusFragment();
                 break;
-            case R.id.nav_register:
-                fragment = new RegisterBankSampahFragment();
+            case R.id.nav_jadwal:
+                fragment = new UpdateJadwalFragment();
+                break;
+            case R.id.nav_input:
+                fragment = new InputSampahFragment();
+                break;
+            case R.id.nav_profile:
+                fragment = new ProfilePengurusFragment();
                 break;
             case R.id.nav_logout:
                 Intent i = new Intent(this, MainActivity.class);
@@ -113,7 +119,7 @@ public class PengurusActivity extends AppCompatActivity implements NavigationVie
                 break;
         }
 
-        if(fragment != null){
+        if (fragment != null) {
             FragmentTransaction ft = getFragmentManager().beginTransaction();
             ft.replace(R.id.content_frame, fragment);
             ft.commit();

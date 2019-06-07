@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="id.ac.umn.trashare.DetailRedeemPrizeActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorMenu"
+            app:titleTextColor="@color/md_white_1000"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_light_green_A100"
+        app:cardCornerRadius="20dp"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/imgView"
+            android:src="@mipmap/ic_launcher"/>
+    </android.support.v7.widget.CardView>
+
+    <TableRow android:padding="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSponsor"
+            android:layout_weight="1"
+            android:text="Sponsor"/>
+    </TableRow>
+
+    <TableRow android:padding="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNama"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="Hadiah 1"/>
+    </TableRow>
+    <TableRow
+        android:padding="8dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Poin "
+            android:id="@+id/txtPoin"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtValid"
+            android:layout_weight="1"
+            android:text="Dapatkan kejutan menarik"/>
+    </TableRow>
+    <TableRow
+        android:paddingTop="8dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+    </TableRow>
+    <TableRow
+        android:padding="8dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi : "
+            android:layout_weight="1"
+            android:id="@+id/txtDescription"
+            />
+    </TableRow>
+    <TableRow
+        android:padding="8dp">
+        <Button
+            android:textColor="@color/md_white_1000"
+            android:background="@drawable/green_button"
+            android:id="@+id/btnRedeem"
+            android:text="Tukar"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+</TableLayout>

@@ -1,12 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipeRefreshSampah"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:stretchColumns="0, 1, 2, 3"
-    android:gravity="center"
-    android:padding="16dp"
-    android:id="@+id/tipe_harga_sampah_table">
+    android:padding="16dp">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60dp">
+            <ListView
+                android:id="@+id/listSampah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+            </ListView>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah Sampah"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/green_button"
+            android:id="@+id/btnAdd"
+            android:textColor="@color/md_white_1000"
+
+            />
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
